@@ -16,13 +16,13 @@ public class Api_CalculationFormulas {
     public void Post_Test1() {
         int cont=0;
         try {
-            for (int i = 1; i < 3; i++) {
+            for (int i = 1; i < 1; i++) {
                 cont++;
 
                 // Este pos tiene la complejida de dos JSON insert en [CalculationFormulaByCalculationVariable] y [CalculationFormula] con base a la tabla [CalculationVariable]
                 ////Insert in Table
                 System.out.println("*****CalculationFormula - Create*****");
-                RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/CalculationFormula/Create";
+                RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationFormula/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -51,6 +51,7 @@ public class Api_CalculationFormulas {
 
                 Response response = httpRequest.request(Method.POST, "");
 
+                System.out.println(response);
                 String responseBody = response.getBody().asString();
                 System.out.println("Response Body is: " + responseBody);
 
@@ -72,9 +73,9 @@ public class Api_CalculationFormulas {
     public void Get_Test2() {
         ///Select one date the tabla
         System.out.println("***** CalculationFormula - Get*****");
-        Response response = RestAssured.get("https://elevadevbackend.azurewebsites.net/api/services/app/CalculationFormula/Get?Id="+Math.round(Math.random()*10));
+        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationFormula/Get?Id=1");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://elevadevbackend.azurewebsites.net/api/services/app/CalculationFormula/Get");
+        System.out.println("La URL a validar: https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationFormula/Get");
 
         //Body post Request
         RequestSpecification request = RestAssured.given();
@@ -139,7 +140,7 @@ public class Api_CalculationFormulas {
      public void GetALL_Test4() {
             ///Select date the All tabla
             System.out.println("*****CalculationFormula - Select all Data*****");
-            RestAssured.baseURI="https:/api/services/app/CalculationFormula/GetAll";
+            RestAssured.baseURI="https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationFormula/GetAll";
             System.out.println("=================================================");
             System.out.println("La URL a validar:" + RestAssured.baseURI);
 
@@ -171,7 +172,7 @@ public class Api_CalculationFormulas {
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
 
-        Response response =request.delete("https://elevadevbackend.azurewebsites.net/api/services/app/CalculationFormula/Delete?Id=" +  Math.round(Math.random()*5));
+        Response response =request.delete("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationFormula/Delete?Id=" +  Math.round(Math.random()*5));
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );

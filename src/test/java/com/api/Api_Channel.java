@@ -16,12 +16,12 @@ public class Api_Channel {
     public void Post_test1() {
         int cont = 0;
         try {
-            for (int i = 1; i < 10; i++) {
+            for (int i = 1; i < 1; i++) {
                 cont++;
 
                 ////Insert in Table
                 System.out.println("*****Channel - Create*****");
-                RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/Channel/Create";
+                RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Channel/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -51,9 +51,9 @@ public class Api_Channel {
     @Test
     public void Get_Test2() {
         System.out.println("***** Channel - Get *****");
-        Response response = RestAssured.get("https://elevadevbackend.azurewebsites.net/api/services/app/Channel/Get?Id="+Math.round(Math.random()*10));
+        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Channel/Get?Id=1");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://elevadevbackend.azurewebsites.net/api/services/app/Channel/Get");
+        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Channel/Get");
 
         //Body post Request
         RequestSpecification request = RestAssured.given();
@@ -78,7 +78,7 @@ public class Api_Channel {
     public void GetALL_test4 () {
         ///Select date the All tabla
         System.out.println("*****Channel - Select all Data*****");
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/Channel/GetALL";
+        RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Channel/GetALL";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
 
@@ -106,7 +106,7 @@ public class Api_Channel {
     public void Put_test3 () {
 
             System.out.println("*****Channel - Upadate*****");
-            RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/Channel/Update";
+            RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Channel/Update";
             System.out.println("=================================================");
             System.out.println("La URL a validar:" + RestAssured.baseURI);
             RequestSpecification httpRequest = RestAssured.given();
@@ -137,7 +137,7 @@ public class Api_Channel {
             RequestSpecification request = RestAssured.given();
             request.header("Content-Type", "application/json");
 
-            Response response = request.delete("https://elevadevbackend.azurewebsites.net/api/services/app/Channel/Delete?Id="+Math.round(Math.random()*10));
+            Response response = request.delete("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Channel/Delete?Id="+Math.round(Math.random()*10));
 
             String responseBody = response.getBody().asString();
             System.out.println("Response Body is: " + responseBody);

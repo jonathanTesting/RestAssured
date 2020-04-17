@@ -19,12 +19,12 @@ public class Api_CaculationVariable {
         int cont=1;
         try {
 
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 1; i++) {
                 cont++;
 
                 System.out.println("======================POST===========================");
                 System.out.println("***** CalculationVariable - Create*****");
-                RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/Create";
+                RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -65,13 +65,13 @@ public class Api_CaculationVariable {
     public void Post_test2() {
         int cont = 1;
         try {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 1; i++) {
                 cont++;
 
         ///Insert in table [VariableListValueByCalculationVariable]
         System.out.println("======================POST===========================");
         System.out.println("*****CalculationVariable - Create Variable List Value By Calculation Variable*****");
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/CreateVariableListValueByCalculationVariable";
+        RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/CreateVariableListValueByCalculationVariable";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -111,12 +111,13 @@ public class Api_CaculationVariable {
             e.printStackTrace();
         }
     }
+
     @Test
     public void Post_Test3() {
         ///Insert in table [VariableListValueByCalculationVariable]
         System.out.println("======================POST===========================");
         System.out.println("***** Create Calculation Formula By Calculation Variable*****");
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/CreateCalculationFormulaByCalculationVariable";
+        RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/CreateCalculationFormulaByCalculationVariable";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -125,8 +126,8 @@ public class Api_CaculationVariable {
         JSONArray array = new JSONArray();
         JSONObject requestParams = new JSONObject();
         try {
-            requestParams.put("calculationVariableId", Math.round(Math.random()*10));
-            requestParams.put("calculationFormulaId", Math.round(Math.random()*10));
+            requestParams.put("calculationVariableId", Math.round(Math.random()*30));
+            requestParams.put("calculationFormulaId", Math.round(Math.random()*30));
         } catch (JsonException e) {
             e.printStackTrace();
         }
@@ -158,9 +159,9 @@ public class Api_CaculationVariable {
     public void Get_Test4() {
 
         System.out.println("***** CalculationVariable - GET********");
-        Response response = RestAssured.get("https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/Get/?Id="+Math.round(Math.random()*10));
+        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/Get?Id=3");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/Get");
+        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/Get");
 
         //Body post Request
         RequestSpecification request = RestAssured.given();
@@ -183,13 +184,16 @@ public class Api_CaculationVariable {
 
     @Test
     public void GetALL_Test5() {
-
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/GetAll";
+        System.out.println("***** CalculationVariable - GetALL *****");
+        RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/GetAll";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
 
         RequestSpecification httpRequest = RestAssured.given();
         Response response = httpRequest.request(Method.GET, "");
+
+        String responseBody = response.getBody().asString();
+        System.out.println("Response Body is: " + responseBody);
 
         int statusCode = response.getStatusCode();
         System.out.println("Status codigo es: " + statusCode);
@@ -206,9 +210,9 @@ public class Api_CaculationVariable {
     public void GetVariable_Test6() {
 
         System.out.println("***** GetVariableListValueByCalculationVariable - Get *****");
-        Response response = RestAssured.get("https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/GetVariableListValueByCalculationVariable?CalculationVariableId=2&VariableListValueId=2");
+        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/GetVariableListValueByCalculationVariable?CalculationVariableId=2&VariableListValueId=2");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  /api/services/app/CalculationVariable/GetVariableListValueByCalculationVariable");
+        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/GetVariableListValueByCalculationVariable");
 
         //Body post Request
         RequestSpecification request = RestAssured.given();
@@ -233,9 +237,9 @@ public class Api_CaculationVariable {
     public void GetCalculation_Test7() {
 
         System.out.println("***** GetVariableListValueByCalculationVariable - Get *****");
-        Response response = RestAssured.get("https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/GetCalculationFormulaByCalculationVariable?CalculationVariableId=2&CalculationFormulaId=1");
+        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/GetCalculationFormulaByCalculationVariable?CalculationVariableId=2&CalculationFormulaId=1");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/GetCalculationFormulaByCalculationVariable");
+        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/GetCalculationFormulaByCalculationVariable");
 
         //Body post Request
         RequestSpecification request = RestAssured.given();
@@ -260,7 +264,7 @@ public class Api_CaculationVariable {
     public void Put_Test8() {
 
         System.out.println("*****VariableListValue - Update*****");
-        RestAssured.baseURI="https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/Update";
+        RestAssured.baseURI="https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/Update";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -296,7 +300,7 @@ public class Api_CaculationVariable {
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
 
-        Response response =request.delete("https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/Delete?Id="+Math.round(Math.random()*10));
+        Response response =request.delete("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/Delete?Id="+Math.round(Math.random()*10));
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );
@@ -311,7 +315,7 @@ public class Api_CaculationVariable {
 
         ///Delete date the tabla
         System.out.println("*****Delete Variable ListValue By CalculationVariable - Delete*****");
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/DeleteVariableListValueByCalculationVariable";
+        RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/DeleteVariableListValueByCalculationVariable";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -347,15 +351,15 @@ public class Api_CaculationVariable {
 
         ///Delete date the tabla
         System.out.println("*****Delete Variable ListValue By CalculationVariable - Delete*****");
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/CalculationVariable/DeleteCalculationFormulaByCalculationVariable";
+        RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/CalculationVariable/DeleteCalculationFormulaByCalculationVariable";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
 
         JSONObject requestParams = new JSONObject();
 
-        requestParams.put("calculationVariableId",1);
-        requestParams.put("calculationFormulaId",5);
+        requestParams.put("calculationVariableId",Math.round(Math.random()*20));
+        requestParams.put("calculationFormulaId",Math.round(Math.random()*20));
 
 
         httpRequest.header("Content-Type", "application/json");

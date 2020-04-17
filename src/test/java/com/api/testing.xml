@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="1" parallel="tests">
+
+    <test name="TestAPIGET">
+        <classes>
+            <class name="com.api.Api_Channel"/>
+            <class name="com.api.Api_CalculationFormulas"/>
+            <class name="com.api.Api_ListVariableValue"/>
+            <class name="com.api.Api_CaculationVariable"/>
+            <class name="com.api.Api_Objetive"/>
+            <class name="com.api.Api_ObjetiveCategory"/>
+            <class name="com.api.Api_RatingCategory"/>
+            <class name="com.api.Api_CreditRating"/>
+            <class name="com.api.Api_RiskProfile"/>
+            <class name="com.api.Api_RiskLevel"/>
+            <class name="com.api.Api_Module"/>
+            <class name="com.api.Api_ModelPortafolio"/>
+            <class name="com.api.Api_ModuleMessage"/>
+            <class name="com.api.Api_Product"/>
+            <class name="com.api.Api_SpanishMessage"/>
+
+
+
+
+
+        </classes>
+    </test>
+
+
+</suite>

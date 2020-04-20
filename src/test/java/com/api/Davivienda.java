@@ -13,12 +13,14 @@ import static io.restassured.http.Method.*;
 
 public class Davivienda {
 
+    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
+
 
     @Test
     public void Put_Test1() {
 
         System.out.println("***** Davivienda -  UpdateSurvey *****");
-        RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/UpdateSurvey";
+        RestAssured.baseURI = URL+"/api/services/app/Davivienda/UpdateSurvey";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -100,154 +102,87 @@ public class Davivienda {
     public void Get_Test2() {
 
         System.out.println("*****Module - GetSurvey*****");
-        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetSurvey?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&OfficeCode=0&TicketValue=0&SurveyCode=PERFIL_RIESGO");
         System.out.println("=================================================");
         System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetSurvey");
 
-        //Body post Request
-        RequestSpecification request = RestAssured.given();
-        request.header("Content-Type", "application/json");
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetSurvey?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&OfficeCode=0&TicketValue=0&SurveyCode=PERFIL_RIESGO"));
 
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
-
-        int statusCode = response.getStatusCode();
-        System.out.println("Status codigo is: " + statusCode);
-        Assert.assertEquals(statusCode, 200);
-
-        //status line verification
-        String statusLine = response.getStatusLine();
-        System.out.println("Status linea es:" + statusLine);
-        Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
     }
 
     @Test
     public void Get_Test3() {
 
         System.out.println("*****Module - GetNaturalPerson*****");
-        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=111111&OfficeCode=0");
         System.out.println("=================================================");
         System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson");
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=111111&OfficeCode=0"));
 
-        //Body post Request
-        RequestSpecification request = RestAssured.given();
-        request.header("Content-Type", "application/json");
-
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
-
-        int statusCode = response.getStatusCode();
-        System.out.println("Status codigo is: " + statusCode);
-        Assert.assertEquals(statusCode, 200);
-
-        //status line verification
-        String statusLine = response.getStatusLine();
-        System.out.println("Status linea es:" + statusLine);
-        Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
     }
     @Test
     public void Get_Test3_1() {
 
         System.out.println("*****Validacion Email Errado*****");
-        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=100&OfficeCode=0");
         System.out.println("=================================================");
         System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson");
 
-        //Body post Request
-        RequestSpecification request = RestAssured.given();
-        request.header("Content-Type", "application/json");
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo400(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=100&OfficeCode=0"));
 
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
-
-        int statusCode = response.getStatusCode();
-        System.out.println("Status codigo is: " + statusCode);
-        Assert.assertEquals(statusCode, 400);
     }
 
     @Test
     public void Get_Test3_1_1() {
 
         System.out.println("*****Validacion Telefonos Errado*****");
-        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=18907&OfficeCode=0");
         System.out.println("=================================================");
         System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson");
 
-        //Body post Request
-        RequestSpecification request = RestAssured.given();
-        request.header("Content-Type", "application/json");
-
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
-
-        int statusCode = response.getStatusCode();
-        System.out.println("Status codigo is: " + statusCode);
-        Assert.assertEquals(statusCode, 400);
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo400(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=18907&OfficeCode=0"));
     }
 
     @Test
     public void Get_Test3_2() {
 
         System.out.println("*****Validacion Listas Restictivas*****");
-        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=65765437&OfficeCode=0");
         System.out.println("=================================================");
         System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson");
 
-        //Body post Request
-        RequestSpecification request = RestAssured.given();
-        request.header("Content-Type", "application/json");
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo400(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=65765437&OfficeCode=0"));
 
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
-
-        int statusCode = response.getStatusCode();
-        System.out.println("Status codigo is: " + statusCode);
-        Assert.assertEquals(statusCode, 400);
     }
 
     @Test
     public void Get_Test3_3() {
 
         System.out.println("*****Validacion Campos Obligatorios*****");
-        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=80907&OfficeCode=0");
         System.out.println("=================================================");
         System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson");
 
-        //Body post Request
-        RequestSpecification request = RestAssured.given();
-        request.header("Content-Type", "application/json");
-
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
-
-        int statusCode = response.getStatusCode();
-        System.out.println("Status codigo is: " + statusCode);
-        Assert.assertEquals(statusCode, 400);
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo400(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=80907&OfficeCode=0"));
     }
 
     @Test
     public void Get_Test4() {
 
         System.out.println("*****Module - GetProductBalance*****");
-        Response response = RestAssured.get("https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetProductBalance?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=1&IdentificactionNumber=111111&CompanyValue=1&ProductCode=1&ProductNumber=1&WithSavings=1&WithCurrent=1&WithCreditCard=1&WithCredits=1&WithDabuenavida=1&WithProtectedCreditCard=1");
         System.out.println("=================================================");
         System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetProductBalance");
 
-        //Body post Request
-        RequestSpecification request = RestAssured.given();
-        request.header("Content-Type", "application/json");
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetProductBalance?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=1&IdentificactionNumber=111111&CompanyValue=1&ProductCode=1&ProductNumber=1&WithSavings=1&WithCurrent=1&WithCreditCard=1&WithCredits=1&WithDabuenavida=1&WithProtectedCreditCard=1"));
 
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
-
-        int statusCode = response.getStatusCode();
-        System.out.println("Status codigo is: " + statusCode);
-        Assert.assertEquals(statusCode, 200);
-
-        //status line verification
-        String statusLine = response.getStatusLine();
-        System.out.println("Status linea es:" + statusLine);
-        Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
     }
 }
 

@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3ee41e8-d6dd-44ea-9c32-ce7d38a2364f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/contender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/Apired.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/api/contender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/api/contenedorTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Channel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Davivienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Davivienda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Davivienda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Davivienda.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,68 +24,105 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="169" column="7" selection-start-line="169" selection-start-column="7" selection-end-line="172" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Post_Test1#0;class#Api_CaculationVariable#0" />
-                <element signature="method#Post_test2#0;class#Api_CaculationVariable#0" />
-                <element signature="method#Post_Test3#0;class#Api_CaculationVariable#0" />
-                <element signature="method#GetALL_Test5#0;class#Api_CaculationVariable#0" />
-                <element signature="method#GetVariable_Test6#0;class#Api_CaculationVariable#0" />
-                <element signature="method#GetCalculation_Test7#0;class#Api_CaculationVariable#0" />
-                <element signature="method#Put_Test8#0;class#Api_CaculationVariable#0" />
-                <element signature="method#Delete_Test9#0;class#Api_CaculationVariable#0" />
-                <element signature="method#Delete_Test10#0;class#Api_CaculationVariable#0" />
-                <element signature="method#Delete_Test11#0;class#Api_CaculationVariable#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="167" column="20" lean-forward="true" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
-              <folding>
-                <element signature="method#Post_Test1#0;class#Api_CalculationFormulas#0" />
-                <element signature="method#Get_Test2#0;class#Api_CalculationFormulas#0" />
-                <element signature="method#Put_Test3#0;class#Api_CalculationFormulas#0" />
-                <element signature="method#GetALL_Test4#0;class#Api_CalculationFormulas#0" />
-                <element signature="method#Delete_test5#0;class#Api_CalculationFormulas#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_Channel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="132" column="23" lean-forward="true" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
-              <folding>
-                <element signature="method#Post_test1#0;class#Api_Channel#0" />
-                <element signature="method#Get_Test2#0;class#Api_Channel#0" />
-                <element signature="method#GetALL_test4#0;class#Api_Channel#0" />
-                <element signature="method#Put_test3#0;class#Api_Channel#0" />
-                <element signature="method#Delete_test5#0;class#Api_Channel#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.46055436">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="376">
+                  <caret line="217" column="59" selection-start-line="217" selection-start-column="7" selection-end-line="217" selection-end-column="59" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#Post_Test1#0;class#Api_CaculationVariable#0" />
+                    <element signature="method#Post_test2#0;class#Api_CaculationVariable#0" />
+                    <element signature="method#Post_Test3#0;class#Api_CaculationVariable#0" />
+                    <element signature="method#GetALL_Test5#0;class#Api_CaculationVariable#0" />
+                    <element signature="method#GetCalculation_Test7#0;class#Api_CaculationVariable#0" />
+                    <element signature="method#Put_Test8#0;class#Api_CaculationVariable#0" />
+                    <element signature="method#Delete_Test9#0;class#Api_CaculationVariable#0" />
+                    <element signature="method#Delete_Test10#0;class#Api_CaculationVariable#0" />
+                    <element signature="method#Delete_Test11#0;class#Api_CaculationVariable#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="75" column="44" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="44" />
+                  <folding>
+                    <element signature="method#Post_Test1#0;class#Api_CalculationFormulas#0" />
+                    <element signature="method#Put_Test3#0;class#Api_CalculationFormulas#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_Channel.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-125">
+                  <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+                  <folding>
+                    <element signature="method#Post_test1#0;class#Api_Channel#0" />
+                    <element signature="method#Get_Test2#0;class#Api_Channel#0" />
+                    <element signature="method#GetALL_test4#0;class#Api_Channel#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/api/contender.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#Put_Test1#0;class#Davivienda#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/api/contender.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="TestNG Test Class" />
       </list>
     </option>
   </component>
@@ -94,10 +134,14 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/api/Api_Parameter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/api/Davivienda.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/api/Contendor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/api/contenedorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/api/Api_Channel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/api/contenedor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/api/contender.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/api/Davivienda.java" />
       </list>
     </option>
   </component>
@@ -157,18 +201,7 @@
             <path>
               <item name="RestAssured" type="b2602c69:ProjectViewProjectNode" />
               <item name="RestAssured" type="462c0819:PsiDirectoryNode" />
-              <item name="Imag" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestAssured" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAssured" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestAssured" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAssured" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RestAssured" type="b2602c69:ProjectViewProjectNode" />
@@ -191,23 +224,36 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RestAssured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestAssured" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
+    <key name="CreateTestDialog.RecentsKey">
       <recent name="com.api" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jrodriguez\IdeaProjects\Apired\Imag" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jrodriguez\IdeaProjects\Apired\src\test\java\com\api" />
@@ -215,8 +261,8 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.api" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jrodriguez\IdeaProjects\Apired\Imag" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -231,79 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Api_Channel.Delete_test5">
-    <configuration name="Api_Channel.Delete_test5" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Apired" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Api_Channel" />
-      <option name="METHOD_NAME" value="Delete_test5" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Api_Channel.GetALL_test4" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Apired" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Api_Channel" />
-      <option name="METHOD_NAME" value="GetALL_test4" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Api_Channel.Get_Test2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Apired" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Api_Channel" />
-      <option name="METHOD_NAME" value="Get_Test2" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Api_Channel.Post_test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Apired" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Api_Channel" />
-      <option name="METHOD_NAME" value="Post_test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Davivienda.Get_Test2">
     <configuration name="Api_Channel.Put_test3" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Apired" />
       <extension name="coverage">
@@ -322,13 +296,85 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Davivienda.Get_Test2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Apired" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
+      <option name="METHOD_NAME" value="Get_Test2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Davivienda.Get_Test3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Apired" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
+      <option name="METHOD_NAME" value="Get_Test3" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Davivienda.Get_Test3_1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Apired" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
+      <option name="METHOD_NAME" value="Get_Test3_1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Davivienda.Put_Test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Apired" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
+      <option name="METHOD_NAME" value="Put_Test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Api_Channel.Delete_test5" />
+        <item itemvalue="TestNG.Davivienda.Get_Test2" />
+        <item itemvalue="TestNG.Davivienda.Put_Test1" />
         <item itemvalue="TestNG.Api_Channel.Put_test3" />
-        <item itemvalue="TestNG.Api_Channel.GetALL_test4" />
-        <item itemvalue="TestNG.Api_Channel.Get_Test2" />
-        <item itemvalue="TestNG.Api_Channel.Post_test1" />
+        <item itemvalue="TestNG.Davivienda.Get_Test3" />
+        <item itemvalue="TestNG.Davivienda.Get_Test3_1" />
       </list>
     </recent_temporary>
   </component>
@@ -346,35 +392,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Api_CalculationFormulas_GetALL_Test4 - 2020.04.17 at 16h 38m 38s.xml">
-      <configuration name="Api_CalculationFormulas.GetALL_Test4" configurationId="TestNG" />
+    <history-entry file="Davivienda_Get_Test2 - 2020.04.20 at 11h 13m 26s.xml">
+      <configuration name="Davivienda.Get_Test2" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Api_CalculationFormulas_Delete_test5 - 2020.04.17 at 16h 39m 21s.xml">
-      <configuration name="Api_CalculationFormulas.Delete_test5" configurationId="TestNG" />
+    <history-entry file="Davivienda_Put_Test1 - 2020.04.20 at 11h 15m 52s.xml">
+      <configuration name="Davivienda.Put_Test1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Api_Channel_Post_test1 - 2020.04.17 at 16h 40m 31s.xml">
-      <configuration name="Api_Channel.Post_test1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Api_Channel_Get_Test2 - 2020.04.17 at 16h 41m 03s.xml">
-      <configuration name="Api_Channel.Get_Test2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Api_Channel_Get_Test2 - 2020.04.17 at 16h 41m 41s.xml">
-      <configuration name="Api_Channel.Get_Test2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Api_Channel_Post_test1 - 2020.04.17 at 16h 41m 57s.xml">
-      <configuration name="Api_Channel.Post_test1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Api_Channel_Get_Test2 - 2020.04.17 at 16h 42m 56s.xml">
-      <configuration name="Api_Channel.Get_Test2" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Api_Channel_GetALL_test4 - 2020.04.17 at 16h 43m 33s.xml">
-      <configuration name="Api_Channel.GetALL_test4" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Api_Channel_Put_test3 - 2020.04.17 at 16h 44m 06s.xml">
+    <history-entry file="Api_Channel_Put_test3 - 2020.04.20 at 11h 21m 20s.xml">
       <configuration name="Api_Channel.Put_test3" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Api_Channel_Delete_test5 - 2020.04.17 at 16h 45m 43s.xml">
-      <configuration name="Api_Channel.Delete_test5" configurationId="TestNG" />
+    <history-entry file="Api_Channel_Put_test3 - 2020.04.20 at 11h 40m 12s.xml">
+      <configuration name="Api_Channel.Put_test3" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Davivienda_Put_Test1 - 2020.04.20 at 12h 12m 27s.xml">
+      <configuration name="Davivienda.Put_Test1" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Davivienda_Put_Test1 - 2020.04.20 at 12h 22m 52s.xml">
+      <configuration name="Davivienda.Put_Test1" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Davivienda_Put_Test1 - 2020.04.20 at 12h 23m 32s.xml">
+      <configuration name="Davivienda.Put_Test1" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Davivienda_Put_Test1 - 2020.04.20 at 14h 20m 45s.xml">
+      <configuration name="Davivienda.Put_Test1" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Davivienda_Get_Test2 - 2020.04.20 at 14h 21m 35s.xml">
+      <configuration name="Davivienda.Get_Test2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Davivienda_Get_Test2 - 2020.04.20 at 14h 22m 15s.xml">
+      <configuration name="Davivienda.Get_Test2" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -388,9 +434,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3219616" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29051173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -398,16 +443,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.38353196" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.34561214" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48773986" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.48773986" visible="true" weight="0.42578548" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010661" side_tool="true" weight="0.30769232" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.063921995" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.04225352" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -520,6 +565,12 @@
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable.java</url>
+          <line>211</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_CreditRating.java</url>
           <line>167</line>
@@ -551,6 +602,22 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java</url>
+          <line>150</line>
+          <properties class="com.api.Davivienda" method="Get_Test3_2">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java</url>
+          <line>138</line>
+          <properties class="com.api.Davivienda" method="Get_Test3_1_1">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -615,17 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1047">
-          <caret line="102" column="309" selection-start-line="102" selection-start-column="309" selection-end-line="102" selection-end-column="309" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Get_Test3_1_1#0;class#Davivienda#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
@@ -633,17 +689,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/api/contenedorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+          <folding>
+            <element signature="method#Post_test1#0;class#Api_Channel#0" />
+            <element signature="method#Get_Test2#0;class#Api_Channel#0" />
+            <element signature="method#GetALL_test4#0;class#Api_Channel#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="75" column="44" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="44" />
+          <folding>
+            <element signature="method#Post_Test1#0;class#Api_CalculationFormulas#0" />
+            <element signature="method#Put_Test3#0;class#Api_CalculationFormulas#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="169" column="7" selection-start-line="169" selection-start-column="7" selection-end-line="172" selection-end-column="64" />
+        <state relative-caret-position="376">
+          <caret line="217" column="59" selection-start-line="217" selection-start-column="7" selection-end-line="217" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Post_Test1#0;class#Api_CaculationVariable#0" />
             <element signature="method#Post_test2#0;class#Api_CaculationVariable#0" />
             <element signature="method#Post_Test3#0;class#Api_CaculationVariable#0" />
             <element signature="method#GetALL_Test5#0;class#Api_CaculationVariable#0" />
-            <element signature="method#GetVariable_Test6#0;class#Api_CaculationVariable#0" />
             <element signature="method#GetCalculation_Test7#0;class#Api_CaculationVariable#0" />
             <element signature="method#Put_Test8#0;class#Api_CaculationVariable#0" />
             <element signature="method#Delete_Test9#0;class#Api_CaculationVariable#0" />
@@ -653,30 +738,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/api/contender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="167" column="20" lean-forward="true" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
-          <folding>
-            <element signature="method#Post_Test1#0;class#Api_CalculationFormulas#0" />
-            <element signature="method#Get_Test2#0;class#Api_CalculationFormulas#0" />
-            <element signature="method#Put_Test3#0;class#Api_CalculationFormulas#0" />
-            <element signature="method#GetALL_Test4#0;class#Api_CalculationFormulas#0" />
-            <element signature="method#Delete_test5#0;class#Api_CalculationFormulas#0" />
-          </folding>
+        <state>
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Api_Channel.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="132" column="23" lean-forward="true" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
           <folding>
-            <element signature="method#Post_test1#0;class#Api_Channel#0" />
-            <element signature="method#Get_Test2#0;class#Api_Channel#0" />
-            <element signature="method#GetALL_test4#0;class#Api_Channel#0" />
-            <element signature="method#Put_test3#0;class#Api_Channel#0" />
-            <element signature="method#Delete_test5#0;class#Api_Channel#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#Put_Test1#0;class#Davivienda#0" />
           </folding>
         </state>
       </provider>

@@ -55,14 +55,14 @@ public class Api_RiskProfile {
     public void Post_Test2() {
 
                 System.out.println("***** RiskProfile - Get *****");
-                RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/RiskProfile/Get";
+                RestAssured.baseURI = "https://02p-elevaapi-d01.azurewebsites.net/api/services/app/RiskProfile/Get";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
 
                 JSONObject requestParams = new JSONObject();
 
-                    requestParams.put("id",Math.round(Math.random()*10));
+                    requestParams.put("id",1);
 
                 httpRequest.header("Content-Type", "application/json");
                 httpRequest.body(requestParams.toJSONString());

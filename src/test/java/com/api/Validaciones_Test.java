@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import static io.restassured.http.Method.DELETE;
 
 
-public class Validaciones {
+public class Validaciones_Test {
 
 
     @Test

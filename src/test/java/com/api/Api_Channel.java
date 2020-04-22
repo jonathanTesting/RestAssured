@@ -38,7 +38,7 @@ public class Api_Channel {
 
                 System.out.println(requestParams);
 
-                httpRequest.header("Content-Type", "application/json");
+                httpRequest.header("Content-Type", "multipart/form-data");
                 httpRequest.body(requestParams.toJSONString());
 
 

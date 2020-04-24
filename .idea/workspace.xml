@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f3ee41e8-d6dd-44ea-9c32-ce7d38a2364f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_RatingCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_RatingCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/ClientProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/ClientProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/contender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/contender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,43 +85,8 @@
       <recent name="com.api" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ClientProduct.Get_Test3 (1)">
-    <configuration name="ClientProduct" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Apired" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.ClientProduct" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientProduct.Delete_test5" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Apired" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.ClientProduct" />
-      <option name="METHOD_NAME" value="Delete_test5" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientProduct.Get_Test3 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Api_RatingCategory.Put_Test5">
+    <configuration name="Api_RatingCategory" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -109,17 +95,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.ClientProduct" />
-      <option name="METHOD_NAME" value="Get_Test3" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_RatingCategory" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientProduct.Get_Test3" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Apired" />
+    <configuration name="Api_RatingCategory.GET_Test3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.api.*" />
@@ -127,8 +112,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.ClientProduct" />
-      <option name="METHOD_NAME" value="Get_Test3" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_RatingCategory" />
+      <option name="METHOD_NAME" value="GET_Test3" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,8 +121,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientProduct.Post_test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Apired" />
+    <configuration name="Api_RatingCategory.GetAll_Test4" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.api.*" />
@@ -145,8 +130,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.ClientProduct" />
-      <option name="METHOD_NAME" value="Post_test1" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_RatingCategory" />
+      <option name="METHOD_NAME" value="GetAll_Test4" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Api_RatingCategory.Post_Test3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_RatingCategory" />
+      <option name="METHOD_NAME" value="Post_Test3" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Api_RatingCategory.Put_Test5" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_RatingCategory" />
+      <option name="METHOD_NAME" value="Put_Test5" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -156,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ClientProduct.Get_Test3 (1)" />
-        <item itemvalue="TestNG.ClientProduct.Get_Test3" />
-        <item itemvalue="TestNG.ClientProduct" />
-        <item itemvalue="TestNG.ClientProduct.Delete_test5" />
-        <item itemvalue="TestNG.ClientProduct.Post_test1" />
+        <item itemvalue="TestNG.Api_RatingCategory.Put_Test5" />
+        <item itemvalue="TestNG.Api_RatingCategory.GetAll_Test4" />
+        <item itemvalue="TestNG.Api_RatingCategory.GET_Test3" />
+        <item itemvalue="TestNG.Api_RatingCategory.Post_Test3" />
+        <item itemvalue="TestNG.Api_RatingCategory" />
       </list>
     </recent_temporary>
   </component>
@@ -176,38 +197,6 @@
       <updated>1568984327110</updated>
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="ClientProduct_Get_Test3 - 2020.04.22 at 16h 38m 13s.xml">
-      <configuration name="ClientProduct.Get_Test3" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ClientProduct - 2020.04.22 at 16h 39m 23s.xml">
-      <configuration name="ClientProduct" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ClientProduct_Delete_test5 - 2020.04.22 at 16h 40m 33s.xml">
-      <configuration name="ClientProduct.Delete_test5" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ClientProduct_Post_test1 - 2020.04.22 at 16h 48m 37s.xml">
-      <configuration name="ClientProduct.Post_test1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ClientProduct_Get_Test3 - 2020.04.22 at 16h 49m 58s.xml">
-      <configuration name="ClientProduct.Get_Test3" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ClientProduct - 2020.04.22 at 16h 53m 25s.xml">
-      <configuration name="ClientProduct" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ClientProduct - 2020.04.22 at 16h 54m 18s.xml">
-      <configuration name="ClientProduct" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ClientProduct_Delete_test5 - 2020.04.22 at 16h 54m 37s.xml">
-      <configuration name="ClientProduct.Delete_test5" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ClientProduct - 2020.04.22 at 16h 55m 31s.xml">
-      <configuration name="ClientProduct" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ClientProduct_Get_Test3 - 2020.04.22 at 16h 56m 15s.xml">
-      <configuration name="ClientProduct.Get_Test3" configurationId="TestNG" />
-    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -243,6 +232,28 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="407" key="GridCell.Tab.0.bottom" timestamp="1587763444883">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="295" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
+    <state width="1877" height="407" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1587763444883" />
+    <state width="1877" height="407" key="GridCell.Tab.0.center" timestamp="1587763444882">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="295" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
+    <state width="1877" height="407" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1587763444882" />
+    <state width="1877" height="407" key="GridCell.Tab.0.left" timestamp="1587763444882">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="295" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
+    <state width="1877" height="407" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1587763444882" />
+    <state width="1877" height="407" key="GridCell.Tab.0.right" timestamp="1587763444883">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="295" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
+    <state width="1877" height="407" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1587763444883" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -309,13 +320,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java</url>
-          <line>147</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java</url>
           <line>103</line>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/api/ClientProduct.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/api/ClientProduct.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_CreditRating.java</url>
@@ -327,7 +343,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_RatingCategory.java</url>
-          <line>20</line>
+          <line>21</line>
           <properties class="com.api.Api_RatingCategory" method="Post_Test1">
             <option name="EMULATED" value="true" />
           </properties>
@@ -335,7 +351,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_RatingCategory.java</url>
-          <line>54</line>
+          <line>55</line>
           <properties class="com.api.Api_RatingCategory" method="Post_Test2">
             <option name="EMULATED" value="true" />
           </properties>
@@ -350,20 +366,12 @@
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java</url>
-          <line>150</line>
-          <properties class="com.api.Davivienda" method="Get_Test3_2">
+          <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_RatingCategory.java</url>
+          <line>112</line>
+          <properties class="com.api.Api_RatingCategory" method="Post_Test3">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java</url>
-          <line>163</line>
-          <properties class="com.api.Davivienda" method="Get_Test3_3">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="55" />
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

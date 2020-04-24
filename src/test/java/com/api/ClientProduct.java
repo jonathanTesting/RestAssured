@@ -19,7 +19,7 @@ public class ClientProduct {
     public void Post_test1() {
         int cont = 0;
         try {
-            for (int i = 1; i < 10; i++) {
+            for (int i = 1; i < 2; i++) {
                 cont++;
 
                 ////Insert in Table
@@ -31,9 +31,9 @@ public class ClientProduct {
 
                 //Body post Request
                 JSONObject requestParams = new JSONObject();
-                requestParams.put("code","3");
+                requestParams.put("code","2"+ Math.round(Math.random()*100));
                 requestParams.put("type","AhorrosAUT");
-                requestParams.put("subProductCode","3035");
+                requestParams.put("subProductCode","6"+ Math.round(Math.random()*100));
                 requestParams.put("name","Test");
                 requestParams.put("firstContribution",true);
                 requestParams.put("schedulePeriodicContribution",true);
@@ -131,7 +131,7 @@ public class ClientProduct {
         System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/ClientProduct/Delete");
         RequestSpecification request = RestAssured.given();
 
-        Response response = request.delete(URL+"/api/services/app/ClientProduct/Delete?Id=40");
+        Response response = request.delete(URL+"/api/services/app/ClientProduct/Delete?Id="+ Math.round(Math.random()*100));
 
         request.header("Content-Type", "application/json");
         String responseBody = response.getBody().asString();

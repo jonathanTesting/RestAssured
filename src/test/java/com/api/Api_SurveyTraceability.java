@@ -13,15 +13,17 @@ import static io.restassured.http.Method.PUT;
 
 public class Api_SurveyTraceability {
 
+    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
+
     @Test
     public void Post_Test1() {
         int cont = 0;
         try {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 2; i++) {
                 cont++;
 
                 System.out.println("***** Survey Traceability - Create *****");
-                RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/SurveyTraceability/Create";
+                RestAssured.baseURI = URL+"/api/services/app/SurveyTraceability/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -58,61 +60,33 @@ public class Api_SurveyTraceability {
     public void Get_Test2() {
 
         System.out.println("***** Survey Traceability - Get*****");
-        Response response = RestAssured.get("https://elevadevbackend.azurewebsites.net/api/services/app/SurveyTraceability/Get?Id="+Math.round(Math.random()*10));
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://elevadevbackend.azurewebsites.net/api/services/app/SurveyTraceability/Get");
+        System.out.println("La URL a validar:"+ URL +"/api/services/app/SurveyTraceability/Get");
 
-        //Body post Request
-        RequestSpecification request = RestAssured.given();
-        request.header("Content-Type", "application/json");
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/SurveyTraceability/Get?Id=4"));
 
-        RequestSpecification httpRequest = RestAssured.given();
-
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
-
-        int statusCode = response.getStatusCode();
-        System.out.println("Status codigo es: " + statusCode);
-        Assert.assertEquals(statusCode, 200);
-
-        //status line verification
-        String statusLine = response.getStatusLine();
-        System.out.println("Status linea es:" + statusLine);
-        Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
     }
 
     @Test
     public void GetALL_Test3() {
 
        System.out.println("***** Survey Traceability  - GetAll*****");
-       Response response = RestAssured.get("https://elevadevbackend.azurewebsites.net/api/services/app/SurveyTraceability/GetAll");
        System.out.println("=================================================");
-       System.out.println("La URL a validar:  https://elevadevbackend.azurewebsites.net/api/services/app/SurveyTraceability/GetAll");
+       System.out.println("La URL a validar: "+ URL +"/api/services/app/SurveyTraceability/GetAll");
 
-       //Body post Request
-       RequestSpecification request = RestAssured.given();
-       request.header("Content-Type", "application/json");
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/SurveyTraceability/GetAll"));
 
-       RequestSpecification httpRequest = RestAssured.given();
-
-       String responseBody = response.getBody().asString();
-       System.out.println("Response Body is: " + responseBody);
-
-       int statusCode = response.getStatusCode();
-       System.out.println("Status codigo es: " + statusCode);
-       Assert.assertEquals(statusCode, 200);
-
-       //status line verification
-       String statusLine = response.getStatusLine();
-       System.out.println("Status linea es:" + statusLine);
-       Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
-   }
+    }
 
     @Test
     public void Put_Test4() {
 
         System.out.println("***** Survey Traceability - Update*****");
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/SurveyTraceability/Update";
+        RestAssured.baseURI = URL+"/api/services/app/SurveyTraceability/Update";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -126,7 +100,7 @@ public class Api_SurveyTraceability {
         requestParams.put("email","Jrodrigue2z@dataifx.com");
         requestParams.put("mobile","3174249877");
         requestParams.put("result","TestUpdate");
-        requestParams.put("id",Math.round(Math.random()*10));
+        requestParams.put("id",1);
 
         httpRequest.header("Content-Type", "application/json");
         httpRequest.body(requestParams.toJSONString());
@@ -146,10 +120,13 @@ public class Api_SurveyTraceability {
     public void Delete_Test4() {
 
         System.out.println("***** SurveyTraceability - Delete*****");
+        System.out.println("=================================================");
+        System.out.println("La URL a validar:"+ URL +"/api/services/app/SurveyTraceability/Delete");
+
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
 
-        Response response =request.delete("https://elevadevbackend.azurewebsites.net/api/services/app/SurveyTraceability/Delete/?Id="+ Math.round(Math.random()*10));
+        Response response =request.delete(URL+"/api/services/app/SurveyTraceability/Delete/?Id=4");
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );

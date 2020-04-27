@@ -18,16 +18,18 @@ import static io.restassured.http.Method.PUT;
 
 public class Api_Objetive {
 
+    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
+
     @Test
     public void Post_test1() {
         int cont=0;
         try {
-            for (int i = 1; i < 10; i++) {
+            for (int i = 1; i < 2; i++) {
                 cont++;
 
                 ////Insert in Table [Objective]
                 System.out.println("*****Objective - Create - Create*****");
-                RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/Objective/Create";
+                RestAssured.baseURI = URL+"/api/services/app/Objective/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -268,36 +270,17 @@ public class Api_Objetive {
             e.printStackTrace();
         }
     }
+
     @Test
     public void Get_test6() {
         System.out.println("*****Objective - Select for id*****");
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/Objective/Get";
         System.out.println("=================================================");
-        System.out.println("La URL a validar:" + RestAssured.baseURI);
-        RequestSpecification httpRequest = RestAssured.given();
+        System.out.println("La URL a validar:"+URL+"/api/services/app/ObjectiveCategory/GetObjectiveCategoryByChannel?ObjectiveCategoryId=2&Channel");
 
-        JSONObject requestParams = new JSONObject();
-        requestParams.put("Id", Math.round(Math.random()*10));
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/ObjectiveCategory/GetObjectiveCategoryByChannel?ObjectiveCategoryId=2&ChannelId=1"));
 
-
-        httpRequest.header("Content-Type", "application/json");
-        httpRequest.body(requestParams.toJSONString());
-
-        System.out.println(requestParams);
-
-        Response response = httpRequest.request(Method.POST, "");
-
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
-
-        int status = response.getStatusCode();
-        System.out.println("Status code is: " + status);
-        Assert.assertEquals(status, 200);
-
-        //status line verification
-        String statusLine = response.getStatusLine();
-        System.out.println("Status linea es:" + statusLine);
-        Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
     }
     @Test
     public void Get_test7() {
@@ -436,10 +419,11 @@ public class Api_Objetive {
 
         ///Delete date the tabla
         System.out.println("*****Objective - Delete*****");
+        System.out.println("La URL a validar: "+URL+"/api/services/app/Objective/Delete");
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
 
-        Response response =request.delete("https://elevadevbackend.azurewebsites.net/api/services/app/Objective/Delete?Id=" +  Math.round(Math.random()*10));
+        Response response =request.delete(URL+"/api/services/app/Objective/Delete?Id=59");
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );

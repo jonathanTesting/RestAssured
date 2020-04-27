@@ -103,7 +103,7 @@ public class ClientProduct {
 
         System.out.println("*****ClientProduct - GetSurvey*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/ClientProduct/Get");
+        System.out.println("La URL a validar:  "+URL+"/api/services/app/ClientProduct/Get");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
@@ -115,7 +115,7 @@ public class ClientProduct {
     public void GetALL_Test4 () {
         ///Select date the All tabla
         System.out.println("*****Channel - Select all Data*****");
-        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/ClientProduct/GetAll");
+        System.out.println("La URL a validar:  "+URL+"/api/services/app/ClientProduct/GetAll");
         System.out.println("=================================================");
 
         /////Metodo Contenedor///
@@ -128,10 +128,10 @@ public class ClientProduct {
 
         ///Delete date the tabla
         System.out.println("*****Channel - Delete*****");
-        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/ClientProduct/Delete");
+        System.out.println("La URL a validar: "+URL+" https://02p-elevaapi-d01.azurewebsites.net/api/services/app/ClientProduct/Delete");
         RequestSpecification request = RestAssured.given();
 
-        Response response = request.delete(URL+"/api/services/app/ClientProduct/Delete?Id="+ Math.round(Math.random()*100));
+        Response response = request.delete(URL+"/api/services/app/ClientProduct/Delete?Id=44");
 
         request.header("Content-Type", "application/json");
         String responseBody = response.getBody().asString();

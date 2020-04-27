@@ -14,16 +14,18 @@ import static io.restassured.http.Method.PUT;
 
 public class Api_SpanishMessage {
 
+    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
+
     @Test
     public void Post_test1() {
         int cont=1;
         try {
-            for (int i = 1; i < 5; i++) {
+            for (int i = 1; i < 1; i++) {
                 cont++;
 
                 ////Insert in Table [Objective]
                 System.out.println("*****SpanishMessage - Create*****");
-                RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/SpanishMessage/Create";
+                RestAssured.baseURI = URL+"/api/services/app/SpanishMessage/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -31,6 +33,7 @@ public class Api_SpanishMessage {
                     JSONObject requestParams = new JSONObject();
 
                     requestParams.put("moduleMessageId", Math.round(Math.random()*10));
+                    requestParams.put("channelId", 98);
                     requestParams.put("text", "SpanishMessage_Create" + Math.round(Math.random()*10));
 
                 httpRequest.header("Content-Type", "application/json");
@@ -56,61 +59,37 @@ public class Api_SpanishMessage {
             e.printStackTrace();
         }
     }
+
     @Test
     public void Get_Test2() {
 
         System.out.println("***** SpanishMessage - Get*****");
-        Response response = RestAssured.get("https://elevadevbackend.azurewebsites.net/api/services/app/SpanishMessage/Get?Id="+Math.round(Math.random()*10));
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://elevadevbackend.azurewebsites.net/api/services/app/SpanishMessage/Get");
+        System.out.println("La URL a validar:"+URL+"/api/services/app/SpanishMessage/Get");
 
-        //Body post Request
-        RequestSpecification request = RestAssured.given();
-        request.header("Content-Type", "application/json");
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/SpanishMessage/Get?Id=8389"));
 
-        RequestSpecification httpRequest = RestAssured.given();
-
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
-
-        int statusCode = response.getStatusCode();
-        System.out.println("Status codigo es: " + statusCode);
-        Assert.assertEquals(statusCode, 200);
-
-        //status line verification
-        String statusLine = response.getStatusLine();
-        System.out.println("Status linea es:" + statusLine);
-        Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
     }
+
     @Test
-    public void Get_test3() {
+    public void GetALL_test3() {
         System.out.println("***** SpanishMessage Get ALL*****");
-        Response response = RestAssured.get("https://elevadevbackend.azurewebsites.net/api/services/app/SpanishMessage/GetAll");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://elevadevbackend.azurewebsites.net/api/services/app/SpanishMessage/GetAll");
+        System.out.println("La URL a validar:"+URL+"/api/services/app/SpanishMessage/GetAll");
 
-        RequestSpecification request = RestAssured.given();
-        request.header("Content-Type","application/json");
 
-        RequestSpecification httpRequest=RestAssured.given();
-
-        String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody );
-
-        int statusCode=response.getStatusCode();
-        System.out.println("Status codigo es: "+statusCode);
-        Assert.assertEquals(statusCode, 200);
-
-        //status line verification
-        String statusLine=response.getStatusLine();
-        System.out.println("Status linea es:"+statusLine);
-        Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
+        /////Metodo Contenedor///
+        contender llamada=new contender();
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/SpanishMessage/GetAll"));
     }
+
     @Test
     public void PUT_test3() {
 
         System.out.println("*****SpanishMessage - Update*****");
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/SpanishMessage/Update";
+        RestAssured.baseURI = URL+"/api/services/app/SpanishMessage/Update";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -120,7 +99,7 @@ public class Api_SpanishMessage {
 
         requestParams.put("moduleMessageId", 0);
         requestParams.put("text", "SpanishMessage_Update *es"+Math.round(Math.random()*29));
-        requestParams.put("id", 4);
+        requestParams.put("id", 8377);
 
 
         httpRequest.header("Content-Type", "application/json");
@@ -142,6 +121,7 @@ public class Api_SpanishMessage {
         System.out.println("Status linea es:" + statusLine);
         Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
     }
+
     @Test
     public void Delete_test4() {
 
@@ -149,7 +129,7 @@ public class Api_SpanishMessage {
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
 
-        Response response =request.delete("https://elevadevbackend.azurewebsites.net/api/services/app/SpanishMessage/Delete?Id=" +  Math.round(Math.random()*9));
+        Response response =request.delete(URL+"/api/services/app/SpanishMessage/Delete?Id=" +  Math.round(Math.random()*9000));
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );

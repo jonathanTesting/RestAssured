@@ -11,13 +11,15 @@ import org.testng.annotations.Test;
 
 import static io.restassured.http.Method.PUT;
 
-public class Api_ListVariableValue {
+public class Api_ListVariableValue_SIN_USO {
+
+    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
 
     @Test
     void Get_Test1() {
 
         System.out.println("*****VariableListValue - Select for id*****");
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/VariableListValue/Get";
+        RestAssured.baseURI = URL+"/api/services/app/VariableListValue/Get";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();

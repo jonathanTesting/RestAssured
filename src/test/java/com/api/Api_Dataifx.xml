@@ -5,9 +5,6 @@
     <test name="TestAPIGET">
         <classes>
             <class name="com.api.Api_Channel"/>
-            <class name="com.api.Api_CalculationFormulas"/>
-            <class name="com.api.Api_ListVariableValue"/>
-            <class name="com.api.Api_CaculationVariable"/>
             <class name="com.api.Api_Objetive"/>
             <class name="com.api.Api_ObjetiveCategory"/>
             <class name="com.api.Api_RatingCategory"/>
@@ -19,10 +16,10 @@
             <class name="com.api.Api_ModuleMessage"/>
             <class name="com.api.Api_Product"/>
             <class name="com.api.Api_SpanishMessage"/>
-
-
-
-
+            <class name="com.api.Api_Parameter"/>
+            <class name="com.api.Api_SurveyTraceability"/>
+            <class name="com.api.ClientProduct"/>
+            <class name="com.api.Davivienda"/>
 
         </classes>
     </test>

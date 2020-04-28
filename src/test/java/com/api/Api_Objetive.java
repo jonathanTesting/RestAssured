@@ -226,7 +226,7 @@ public class Api_Objetive {
         }
     }
     @Test
-    void PUT_Test5() {
+    public void PUT_Test5() {
         int cont=0;
         try {
             for (int i = 1; i < 5; i++) {
@@ -270,7 +270,6 @@ public class Api_Objetive {
             e.printStackTrace();
         }
     }
-
     @Test
     public void Get_test6() {
         System.out.println("*****Objective - Select for id*****");

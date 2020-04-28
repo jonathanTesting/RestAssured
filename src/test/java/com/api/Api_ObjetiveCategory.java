@@ -126,7 +126,7 @@ public class Api_ObjetiveCategory {
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/ObjectiveCategory/Get?Id=3"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/ObjectiveCategory/Get?Id=43"));
 
     }
 
@@ -221,7 +221,7 @@ public class Api_ObjetiveCategory {
         Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
     }
 
-    @Test///Pendiente
+    @Test
     public void Delete_test7() {
 
         ///Delete date the tabla
@@ -239,37 +239,21 @@ public class Api_ObjetiveCategory {
         Assert.assertEquals(status,200);
     }
 
-    @Test// Pendiente de Mensaje
+    @Test
     public void Delete_Test8() {
 
         System.out.println("*****DeleteObjectiveCategory  Update*****");
-        RestAssured.baseURI = URL+"/app/ObjectiveCategory/DeleteObjectiveCategoryByChannel";
-        System.out.println("=================================================");
-        System.out.println("La URL a validar:" + RestAssured.baseURI);
-        RequestSpecification httpRequest = RestAssured.given();
+        System.out.println("La URL a validar: "+URL+"/app/ObjectiveCategory/DeleteObjectiveCategoryByChannel");
+        RequestSpecification request = RestAssured.given();
 
-        JSONObject requestParams = new JSONObject();
-        requestParams.put("objectiveCategoryId",2 );
-        requestParams.put("channelId", 2);
-
-        httpRequest.header("Content-Type", "application/json");
-        httpRequest.body(requestParams.toJSONString());
-
-        System.out.println(requestParams);
-
-        Response response = httpRequest.request(DELETE, "");
+        Response response =request.delete(URL+"/api/services/app/ObjectiveCategory/DeleteObjectiveCategoryByChannel?ObjectiveCategoryId=2&ChannelId=1");
 
         String responseBody = response.getBody().asString();
-        System.out.println("Response Body is: " + responseBody);
+        System.out.println("Response Body is: " + responseBody );
 
         int status = response.getStatusCode();
-        System.out.println("Status code is: " + status);
-        Assert.assertEquals(status, 200);
-
-        //status line verification
-        String statusLine = response.getStatusLine();
-        System.out.println("Status linea es:" + statusLine);
-        Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
+        System.out.println("Status code is: "+ status);
+        Assert.assertEquals(status,200);
     }
 }
 

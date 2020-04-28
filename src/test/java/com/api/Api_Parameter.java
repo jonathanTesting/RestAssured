@@ -105,7 +105,7 @@ public class Api_Parameter {
 
     }
 
-    @Test///Pendiente
+    @Test
     public void Delete_Test4() {
 
         ///Delete date the tabla

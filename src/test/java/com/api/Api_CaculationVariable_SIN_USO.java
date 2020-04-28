@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import static io.restassured.http.Method.DELETE;
 import static io.restassured.http.Method.PUT;
 
-public class Api_CaculationVariable {
+public class Api_CaculationVariable_SIN_USO {
 
     @Test
     public void Post_Test1() {

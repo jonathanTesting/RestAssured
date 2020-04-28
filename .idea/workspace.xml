@@ -20,21 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3ee41e8-d6dd-44ea-9c32-ce7d38a2364f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Davivienda.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable_SIN_USO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas_SIN_USO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Channel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_CreditRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_CreditRating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_ListVariableValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_ListVariableValue_SIN_USO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_ModelPortafolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_ModelPortafolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_ModuleMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_ModuleMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_ObjetiveCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_ObjetiveCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_Parameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Parameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_RiskLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_RiskLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_RiskProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_RiskProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_SpanishMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_SpanishMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_SurveyTraceability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_SurveyTraceability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/ClientProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/ClientProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/tete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_SurveyTraceability.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_SurveyTraceability.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/tete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Dataifx.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_CalculationFormulas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_CalculationFormulas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_Channel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_Channel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_CreditRating.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_CreditRating.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_ListVariableValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_ModelPortafolio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_ModelPortafolio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_Module.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_Module.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_ModuleMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_ModuleMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_Objetive.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_Objetive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_ObjetiveCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_ObjetiveCategory.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +82,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/api" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -90,14 +99,15 @@
       <recent name="com.api" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tatan\IdeaProjects\RestAssured\src\test\java\com\api" />
       <recent name="C:\Users\jrodriguez\IdeaProjects\Apired\src\test\java\com\api" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.api" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Api_Objetive.Get_test6">
-    <configuration name="Api_Objetive.Delete_test9" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Davivienda.Get_Test4">
+    <configuration name="Api_CalculationFormulas_SIN_USO.Post_Test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +116,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Api_Objetive" />
-      <option name="METHOD_NAME" value="Delete_test9" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_CalculationFormulas_SIN_USO" />
+      <option name="METHOD_NAME" value="Post_Test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -115,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Api_Objetive.Get_test6" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Api_CreditRating.Delete_Test6" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +134,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Api_Objetive" />
-      <option name="METHOD_NAME" value="Get_test6" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_CreditRating" />
+      <option name="METHOD_NAME" value="Delete_Test6" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -133,7 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Api_Objetive.Post_test1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Api_CreditRating.Put_Test5" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -142,8 +152,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Api_Objetive" />
-      <option name="METHOD_NAME" value="Post_test1" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_CreditRating" />
+      <option name="METHOD_NAME" value="Put_Test5" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -151,25 +161,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Api_RiskProfile.Delete_Test5" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/tatan/IdeaProjects/RestAssured/src/test/java/com/api/Api_Davivienda.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Api_RiskProfile" />
-      <option name="METHOD_NAME" value="Delete_Test5" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/api/Api_Davivienda.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Api_RiskProfile.Get_Test2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Davivienda.Get_Test4" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -178,8 +180,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Api_RiskProfile" />
-      <option name="METHOD_NAME" value="Get_Test2" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
+      <option name="METHOD_NAME" value="Get_Test4" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -189,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Api_Objetive.Get_test6" />
-        <item itemvalue="TestNG.Api_Objetive.Delete_test9" />
-        <item itemvalue="TestNG.Api_Objetive.Post_test1" />
-        <item itemvalue="TestNG.Api_RiskProfile.Delete_Test5" />
-        <item itemvalue="TestNG.Api_RiskProfile.Get_Test2" />
+        <item itemvalue="TestNG.Davivienda.Get_Test4" />
+        <item itemvalue="TestNG.C:/Users/tatan/IdeaProjects/RestAssured/src/test/java/com/api/Api_Davivienda.xml" />
+        <item itemvalue="TestNG.Api_CalculationFormulas_SIN_USO.Post_Test1" />
+        <item itemvalue="TestNG.Api_CreditRating.Delete_Test6" />
+        <item itemvalue="TestNG.Api_CreditRating.Put_Test5" />
       </list>
     </recent_temporary>
   </component>
@@ -246,26 +248,42 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="434" key="GridCell.Tab.0.bottom" timestamp="1588024309534">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1588110157274">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="295" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
-    <state width="1877" height="434" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588024309534" />
-    <state width="1877" height="434" key="GridCell.Tab.0.center" timestamp="1588024309534">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588110157274" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1588110157273">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="295" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
-    <state width="1877" height="434" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588024309534" />
-    <state width="1877" height="434" key="GridCell.Tab.0.left" timestamp="1588024309534">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588110157273" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1588110157273">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="295" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
-    <state width="1877" height="434" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588024309534" />
-    <state width="1877" height="434" key="GridCell.Tab.0.right" timestamp="1588024309534">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588110157273" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1588110157274">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="295" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
-    <state width="1877" height="434" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588024309534" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588110157274" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1588024898552">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588024898552" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1588024898552">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588024898552" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1588024898552">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588024898552" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1588024898552">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588024898552" />
     <state x="1982" y="240" key="run.anything.popup" timestamp="1588001172882">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
@@ -276,12 +294,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_CreditRating.java</url>
-          <line>142</line>
+          <line>125</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java</url>
-          <line>286</line>
+          <line>285</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -301,7 +319,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java</url>
-          <line>419</line>
+          <line>418</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -325,7 +343,7 @@
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_CaculationVariable_SIN_USO.java</url>
           <line>211</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
@@ -354,9 +372,14 @@
           <line>226</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_ModelPortafolio.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_CreditRating.java</url>
-          <line>167</line>
+          <line>137</line>
           <properties class="com.api.Api_CreditRating" method="Put_Test5">
             <option name="EMULATED" value="true" />
           </properties>
@@ -393,6 +416,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_ObjetiveCategory.java</url>
+          <line>120</line>
+          <properties class="com.api.Api_ObjetiveCategory" method="Get_Test4">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

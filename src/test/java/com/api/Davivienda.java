@@ -181,7 +181,7 @@ public class Davivienda {
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetProductBalance?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=1&IdentificactionNumber=111111&CompanyValue=1&ProductCode=1&ProductNumber=1&WithSavings=1&WithCurrent=1&WithCreditCard=1&WithCredits=1&WithDabuenavida=1&WithProtectedCreditCard=1"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetProductBalance?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=1&IdentificactionNumber=40001&CompanyValue=1&ProductCode=1&ProductNumber=1&WithSavings=1&WithCurrent=1&WithCreditCard=1&WithCredits=1&WithDabuenavida=1&WithProtectedCreditCard=1"));
 
     }
 }

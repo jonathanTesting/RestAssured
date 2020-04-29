@@ -8,15 +8,19 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.net.URL;
+
 import static io.restassured.http.Method.PUT;
 
 public class Api_CalculationFormulas_SIN_USO {
 
-    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
+
 
 
     @Test
     public void Post_Test1() {
+
         int cont=0;
         try {
             for (int i = 0; i < 1; i++) {
@@ -25,7 +29,7 @@ public class Api_CalculationFormulas_SIN_USO {
                 // Este pos tiene la complejida de dos JSON insert en [CalculationFormulaByCalculationVariable] y [CalculationFormula] con base a la tabla [CalculationVariable]
                 ////Insert in Table
                 System.out.println("*****CalculationFormula - Create*****");
-                RestAssured.baseURI = URL+"/api/services/app/CalculationFormula/Create";
+                RestAssured.baseURI = "/api/services/app/CalculationFormula/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();

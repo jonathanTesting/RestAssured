@@ -1,6 +1,5 @@
 package com.api;
 
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
@@ -10,7 +9,9 @@ import org.testng.Assert;
 public class contender {
 
 
-public void metodo200(RequestSpecification request,Response response){
+
+
+    public void metodo200(RequestSpecification request,Response response){
 
     //Body post Request
     request.header("Content-Type", "application/json");
@@ -47,7 +48,9 @@ public void metodo200(RequestSpecification request,Response response){
     }
 
 
+    public String metodo() {
+        String URL = "https://02p-elevaapi-d01.azurewebsites.net";
+        return URL;
 
-
-
+    }
 }

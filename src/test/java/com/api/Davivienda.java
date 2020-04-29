@@ -9,18 +9,21 @@ import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.net.URL;
+
 import static io.restassured.http.Method.*;
 
 public class Davivienda {
 
-    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
-
 
     @Test
+
     public void Put_Test1() {
 
+        contender URL = new contender();
+
         System.out.println("***** Davivienda -  UpdateSurvey *****");
-        RestAssured.baseURI = URL+"/api/services/app/Davivienda/UpdateSurvey";
+        RestAssured.baseURI = URL.metodo() + "/api/services/app/Davivienda/UpdateSurvey";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -101,87 +104,92 @@ public class Davivienda {
     @Test
     public void Get_Test2() {
 
+        contender URL = new contender();
         System.out.println("*****Module - GetSurvey*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetSurvey");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/Davivienda/GetSurvey");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetSurvey?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&OfficeCode=0&TicketValue=0&SurveyCode=PERFIL_RIESGO"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo() +"/api/services/app/Davivienda/GetSurvey?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&OfficeCode=0&TicketValue=0&SurveyCode=PERFIL_RIESGO"));
 
     }
 
     @Test
     public void Get_Test3() {
+        contender URL = new contender();
 
         System.out.println("*****Module - GetNaturalPerson*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/Davivienda/GetNaturalPerson");
+
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=111111&OfficeCode=0"));
-
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo() +"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=111111&OfficeCode=0"));
     }
+
     @Test
     public void Get_Test3_1() {
 
+        contender URL = new contender();
         System.out.println("*****Validacion Email Errado*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/Davivienda/GetNaturalPerson");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo400(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=100&OfficeCode=0"));
+        llamada.metodo400(RestAssured.given(),RestAssured.get(URL.metodo() +"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=100&OfficeCode=0"));
 
     }
 
     @Test
     public void Get_Test3_1_1() {
+        contender URL = new contender();
 
         System.out.println("*****Validacion Telefonos Errado*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson");
+        System.out.println("La URL a validar:"+URL.metodo()+"/api/services/app/Davivienda/GetNaturalPerson");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo400(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=18907&OfficeCode=0"));
+        llamada.metodo400(RestAssured.given(),RestAssured.get(URL.metodo() +"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=18907&OfficeCode=0"));
     }
 
     @Test
     public void Get_Test3_2() {
-
+        contender URL = new contender();
         System.out.println("*****Validacion Listas Restictivas*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/Davivienda/GetNaturalPerson");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo400(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=65765437&OfficeCode=0"));
+        llamada.metodo400(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=65765437&OfficeCode=0"));
 
     }
 
     @Test
     public void Get_Test3_3() {
-
+        contender URL = new contender();
         System.out.println("*****Validacion Campos Obligatorios*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetNaturalPerson");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/Davivienda/GetNaturalPerson");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo400(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=80907&OfficeCode=0"));
+        llamada.metodo400(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/Davivienda/GetNaturalPerson?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=01&IdentificactionNumber=80907&OfficeCode=0"));
     }
 
     @Test
     public void Get_Test4() {
-
+        contender URL = new contender();
         System.out.println("*****Module - GetProductBalance*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/Davivienda/GetProductBalance");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/Davivienda/GetProductBalance");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/Davivienda/GetProductBalance?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=1&IdentificactionNumber=40001&CompanyValue=1&ProductCode=1&ProductNumber=1&WithSavings=1&WithCurrent=1&WithCreditCard=1&WithCredits=1&WithDabuenavida=1&WithProtectedCreditCard=1"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/Davivienda/GetProductBalance?Header.Channel=37&Header.TransactionId=0&Header.WorkingDay=0&Header.Profile=0&Header.User=AX1&Header.OperationMode=0&Header.Total=0&IdentificationType=1&IdentificactionNumber=40001&CompanyValue=1&ProductCode=1&ProductNumber=1&WithSavings=1&WithCurrent=1&WithCreditCard=1&WithCredits=1&WithDabuenavida=1&WithProtectedCreditCard=1"));
 
     }
 }

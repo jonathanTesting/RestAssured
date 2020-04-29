@@ -14,18 +14,18 @@ import static io.restassured.http.Method.*;
 
 public class Api_ObjetiveCategory {
 
-    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
 
     @Test
     public void Post_test1() {
+        contender URL = new contender();
         int cont = 0;
         try {
-            for (int i = 1; i < 10; i++) {
+            for (int i = 0; i < 5; i++) {
                 cont++;
 
                 ////Insert in Table [Objective]
                 System.out.println("*****Objective Category - Create*****");
-                RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/ObjectiveCategory/Create";
+                RestAssured.baseURI = URL.metodo()+"/api/services/app/ObjectiveCategory/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -71,8 +71,9 @@ public class Api_ObjetiveCategory {
 
     @Test
     public void POST_Test2() {
+        contender URL = new contender();
         System.out.println("*****CreateObjectiveCategoryByCalculationVariable - Create*****");
-        RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/ObjectiveCategory/CreateObjectiveCategoryByChannel";
+        RestAssured.baseURI = URL.metodo() +"/app/ObjectiveCategory/CreateObjectiveCategoryByChannel";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -108,43 +109,47 @@ public class Api_ObjetiveCategory {
 
     @Test
     public void Get_Test3() {
+        contender URL = new contender();
         System.out.println("*****GetObjectiveCategoryByChannel - GET *****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:"+URL+"/api/services/app/ObjectiveCategory/GetObjectiveCategoryByChannel?ObjectiveCategoryId=2&ChannelId=2");
+        System.out.println("La URL a validar:"+URL.metodo()+"/api/services/app/ObjectiveCategory/GetObjectiveCategoryByChannel?ObjectiveCategoryId=2&ChannelId=2");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/ObjectiveCategory/GetObjectiveCategoryByChannel?ObjectiveCategoryId=2&ChannelId=2"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/ObjectiveCategory/GetObjectiveCategoryByChannel?ObjectiveCategoryId=2&ChannelId=2"));
     }
 
     @Test
     public void Get_Test4() {
+        contender URL = new contender();
 
         System.out.println("*****ObjectiveCategory - Get*****");
         System.out.println("=================================================");
-        RestAssured.baseURI = URL+"/api/services/app/ObjectiveCategory/Get";
+        RestAssured.baseURI = URL.metodo()+"/api/services/app/ObjectiveCategory/Get";
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/ObjectiveCategory/Get?Id=43"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/ObjectiveCategory/Get?Id=43"));
 
     }
 
     @Test
     public void GetALL_Test4() {
+        contender URL = new contender();
         System.out.println("*****ObjectiveCategory/GetALL - Select ALL*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar: "+URL+"/api/services/app/ObjectiveCategory/GetAll");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/ObjectiveCategory/GetAll");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/ObjectiveCategory/GetAll?Id=0"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/ObjectiveCategory/GetAll?Id=0"));
     }
 
     @Test
     public void PUT_Test5() {
+        contender URL = new contender();
         System.out.println("*****ObjectiveCategory  Order*****");
-        RestAssured.baseURI = URL+"/api/services/app/ObjectiveCategory/Order";
+        RestAssured.baseURI = URL.metodo()+"/api/services/app/ObjectiveCategory/Order";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -180,9 +185,9 @@ public class Api_ObjetiveCategory {
 
     @Test
     public void PUT_Test6() {
-
+        contender URL = new contender();
         System.out.println("*****ObjectiveCategory  Update*****");
-        RestAssured.baseURI = URL+"/api/services/app/ObjectiveCategory/Update";
+        RestAssured.baseURI = URL.metodo()+"/api/services/app/ObjectiveCategory/Update";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -225,11 +230,12 @@ public class Api_ObjetiveCategory {
     public void Delete_test7() {
 
         ///Delete date the tabla
+        contender URL = new contender();
         System.out.println("*****ObjectiveCategory - Delete*****");
-        System.out.println("La URL a validar: "+URL+"/api/services/app/ObjectiveCategory/Delete");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/ObjectiveCategory/Delete");
         RequestSpecification request = RestAssured.given();
 
-        Response response =request.delete(URL+"/api/services/app/ObjectiveCategory/Delete?Id=33");
+        Response response =request.delete(URL.metodo()+"/api/services/app/ObjectiveCategory/Delete?Id=33");
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );
@@ -241,12 +247,12 @@ public class Api_ObjetiveCategory {
 
     @Test
     public void Delete_Test8() {
-
+        contender URL = new contender();
         System.out.println("*****DeleteObjectiveCategory  Update*****");
-        System.out.println("La URL a validar: "+URL+"/app/ObjectiveCategory/DeleteObjectiveCategoryByChannel");
+        System.out.println("La URL a validar: "+URL.metodo()+"/app/ObjectiveCategory/DeleteObjectiveCategoryByChannel");
         RequestSpecification request = RestAssured.given();
 
-        Response response =request.delete(URL+"/api/services/app/ObjectiveCategory/DeleteObjectiveCategoryByChannel?ObjectiveCategoryId=2&ChannelId=1");
+        Response response =request.delete(URL.metodo()+"/api/services/app/ObjectiveCategory/DeleteObjectiveCategoryByChannel?ObjectiveCategoryId=2&ChannelId=1");
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );

@@ -1,11 +1,9 @@
 package com.api;
 
-import groovy.json.JsonException;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,10 +12,11 @@ import static io.restassured.http.Method.PUT;
 
 public class Api_SpanishMessage {
 
-    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
+
 
     @Test
     public void Post_test1() {
+        contender URL = new contender();
         int cont=1;
         try {
             for (int i = 1; i < 1; i++) {
@@ -25,7 +24,7 @@ public class Api_SpanishMessage {
 
                 ////Insert in Table [Objective]
                 System.out.println("*****SpanishMessage - Create*****");
-                RestAssured.baseURI = URL+"/api/services/app/SpanishMessage/Create";
+                RestAssured.baseURI = URL.metodo()+"/api/services/app/SpanishMessage/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -62,34 +61,37 @@ public class Api_SpanishMessage {
 
     @Test
     public void Get_Test2() {
+        contender URL = new contender();
 
         System.out.println("***** SpanishMessage - Get*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:"+URL+"/api/services/app/SpanishMessage/Get");
+        System.out.println("La URL a validar:"+URL.metodo()+"/api/services/app/SpanishMessage/Get");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/SpanishMessage/Get?Id=8389"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/SpanishMessage/Get?Id=8389"));
 
     }
 
     @Test
     public void GetALL_test3() {
+        contender URL = new contender();
         System.out.println("***** SpanishMessage Get ALL*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:"+URL+"/api/services/app/SpanishMessage/GetAll");
+        System.out.println("La URL a validar:"+URL.metodo()+"/api/services/app/SpanishMessage/GetAll");
 
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/SpanishMessage/GetAll"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/SpanishMessage/GetAll"));
     }
 
     @Test
     public void PUT_test3() {
+        contender URL = new contender();
 
         System.out.println("*****SpanishMessage - Update*****");
-        RestAssured.baseURI = URL+"/api/services/app/SpanishMessage/Update";
+        RestAssured.baseURI = URL.metodo()+"/api/services/app/SpanishMessage/Update";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -124,12 +126,13 @@ public class Api_SpanishMessage {
 
     @Test
     public void Delete_test4() {
+        contender URL = new contender();
 
         System.out.println("*****SpanishMessage - Delete*****");
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
 
-        Response response =request.delete(URL+"/api/services/app/SpanishMessage/Delete?Id=" +  Math.round(Math.random()*9000));
+        Response response =request.delete(URL.metodo()+"/api/services/app/SpanishMessage/Delete?Id=" +  Math.round(Math.random()*9000));
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );

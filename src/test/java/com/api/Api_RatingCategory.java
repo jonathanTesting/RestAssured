@@ -17,9 +17,9 @@ import static io.restassured.http.Method.PUT;
 
 public class Api_RatingCategory {
 
-    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
     @Test
     public void Post_Test1() {
+        contender URL = new contender();
         int cont = 0;
         try {
             for (int i = 1; i < 2; i++) {
@@ -27,7 +27,7 @@ public class Api_RatingCategory {
 
                 ////Insert in Table
                 System.out.println("***** RatingCategory - Create *****");
-                RestAssured.baseURI = URL+"/api/services/app/RatingCategory/Create";
+                RestAssured.baseURI = URL.metodo()+"/api/services/app/RatingCategory/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -54,6 +54,7 @@ public class Api_RatingCategory {
     }
     @Test
     public void Post_Test2() {
+        contender URL = new contender();
         int cont=0;
         try {
             for (int i = 1; i < 1; i++) {
@@ -61,7 +62,7 @@ public class Api_RatingCategory {
 
                 ////Insert in Table [Objective]
                 System.out.println("*****CreateOrUpdateRatingCategoryByRiskProfile  - Create*****");
-                RestAssured.baseURI = URL+"/api/services/app/RatingCategory/CreateOrUpdateRatingCategoryByRiskProfile";
+                RestAssured.baseURI = URL.metodo()+"/api/services/app/RatingCategory/CreateOrUpdateRatingCategoryByRiskProfile";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -114,32 +115,35 @@ public class Api_RatingCategory {
 
         // Este pos tiene la complejida de dos JSON insert en [CalculationFormulaByCalculationVariable] y [CalculationFormula] con base a la tabla [CalculationVariable]
         ////Insert in Table
+        contender URL = new contender();
         System.out.println("*****RatingCategory Get*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar: "+URL+"/api/services/app/RatingCategory/Get");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/RatingCategory/Get");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/RatingCategory/Get?Id=1"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/RatingCategory/Get?Id=1"));
 
     }
     @Test
     public void GetAll_Test4() {
         ///Select one date the tabla
+        contender URL = new contender();
         System.out.println("*****RatingCategory - GetAll*****");
         System.out.println("=================================================");
         System.out.println("La URL a validar:  https://02p-elevaapi-d01.azurewebsites.net/api/services/app/RatingCategory/GetAll ");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"//api/services/app/RatingCategory/GetAll"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"//api/services/app/RatingCategory/GetAll"));
 
     }
     @Test
     public void Put_Test5() {
+        contender URL = new contender();
 
         System.out.println("***** RatingCategory - Update*****");
-        RestAssured.baseURI = URL+"/api/services/app/RatingCategory/Update";
+        RestAssured.baseURI = URL.metodo()+"/api/services/app/RatingCategory/Update";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -164,12 +168,13 @@ public class Api_RatingCategory {
     }
     @Test
     public void Delete_Test6() {
+        contender URL = new contender();
 
         System.out.println("*****RatingCategory - Delete*****");
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
 
-        Response response =request.delete(URL+"/api/services/app/RatingCategory/Delete?Id=" +  Math.round(Math.random()*3));
+        Response response =request.delete(URL.metodo()+"/api/services/app/RatingCategory/Delete?Id=" +  Math.round(Math.random()*3));
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );

@@ -13,17 +13,18 @@ import static io.restassured.http.Method.PUT;
 
 public class Api_SurveyTraceability {
 
-    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
 
     @Test
     public void Post_Test1() {
+        contender URL = new contender();
+
         int cont = 0;
         try {
             for (int i = 0; i < 2; i++) {
                 cont++;
 
                 System.out.println("***** Survey Traceability - Create *****");
-                RestAssured.baseURI = URL+"/api/services/app/SurveyTraceability/Create";
+                RestAssured.baseURI = URL.metodo()+"/api/services/app/SurveyTraceability/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -58,35 +59,37 @@ public class Api_SurveyTraceability {
 
     @Test
     public void Get_Test2() {
+        contender URL = new contender();
+
 
         System.out.println("***** Survey Traceability - Get*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:"+ URL +"/api/services/app/SurveyTraceability/Get");
+        System.out.println("La URL a validar:"+ URL.metodo() +"/api/services/app/SurveyTraceability/Get");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/SurveyTraceability/Get?Id=4"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/SurveyTraceability/Get?Id=4"));
 
     }
 
     @Test
     public void GetALL_Test3() {
-
+       contender URL = new contender();
        System.out.println("***** Survey Traceability  - GetAll*****");
        System.out.println("=================================================");
-       System.out.println("La URL a validar: "+ URL +"/api/services/app/SurveyTraceability/GetAll");
+       System.out.println("La URL a validar: "+ URL.metodo() +"/api/services/app/SurveyTraceability/GetAll");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/SurveyTraceability/GetAll"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/SurveyTraceability/GetAll"));
 
     }
 
     @Test
     public void Put_Test4() {
-
+        contender URL = new contender();
         System.out.println("***** Survey Traceability - Update*****");
-        RestAssured.baseURI = URL+"/api/services/app/SurveyTraceability/Update";
+        RestAssured.baseURI = URL.metodo()+"/api/services/app/SurveyTraceability/Update";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -118,15 +121,15 @@ public class Api_SurveyTraceability {
 
     @Test
     public void Delete_Test4() {
-
+        contender URL = new contender();
         System.out.println("***** SurveyTraceability - Delete*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:"+ URL +"/api/services/app/SurveyTraceability/Delete");
+        System.out.println("La URL a validar:"+ URL.metodo() +"/api/services/app/SurveyTraceability/Delete");
 
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
 
-        Response response =request.delete(URL+"/api/services/app/SurveyTraceability/Delete/?Id=4");
+        Response response =request.delete(URL.metodo()+"/api/services/app/SurveyTraceability/Delete/?Id=4");
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );

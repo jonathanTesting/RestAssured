@@ -15,10 +15,9 @@ import static io.restassured.http.Method.PUT;
 
 public class Api_RiskLevel {
 
-    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
-
     @Test
     public void Post_Test1() {
+        contender URL = new contender();
         int cont = 0;
         try {
             for (int i = 1; i < 1; i++) {
@@ -26,7 +25,7 @@ public class Api_RiskLevel {
 
                 ////Insert in Table
                 System.out.println("*****RiskLevel - Create*****");
-                RestAssured.baseURI = URL+"api/services/app/RiskLevel/Create";
+                RestAssured.baseURI = URL.metodo()+"api/services/app/RiskLevel/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -55,9 +54,10 @@ public class Api_RiskLevel {
 
     @Test
     public void Post_Test2() {
+        contender URL = new contender();
 
                 System.out.println("***** CreateOrUpdateRiskLevelByRiskProfile - Create *****");
-                RestAssured.baseURI = URL+"/api/services/app/RiskLevel/CreateOrUpdateRiskLevelByRiskProfile";
+                RestAssured.baseURI = URL.metodo()+"/api/services/app/RiskLevel/CreateOrUpdateRiskLevelByRiskProfile";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -103,36 +103,39 @@ public class Api_RiskLevel {
 
     @Test
     public void Get_Test3() {
+        contender URL = new contender();
 
         System.out.println("***** CreateOrUpdateRiskLevelByRiskProfile - Create *****");
         System.out.println("=================================================");
-        RestAssured.baseURI = URL+"/api/services/app/RiskLevel/Get";
+        RestAssured.baseURI = URL.metodo()+"/api/services/app/RiskLevel/Get";
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/RiskLevel/Get?Id=2"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/RiskLevel/Get?Id=2"));
 
     }
 
     @Test
     public void GetALL_Test4() {
        ///Select one date the tabla
+        contender URL = new contender();
         System.out.println("*****RiskLevel - GetAll*****");
         System.out.println("=================================================");
-        Response response = RestAssured.get(URL+"/api/services/app/RiskLevel/GetAll");
+        Response response = RestAssured.get(URL.metodo()+"/api/services/app/RiskLevel/GetAll");
 
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/RiskLevel/GetAll"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/RiskLevel/GetAll"));
 
 
     }
     @Test
     public void Put_Test5() {
+        contender URL = new contender();
 
         System.out.println("***** RiskLevel - Update*****");
-        RestAssured.baseURI = URL+"/api/services/app/RiskLevel/Update";
+        RestAssured.baseURI = URL.metodo()+"/api/services/app/RiskLevel/Update";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -157,12 +160,12 @@ public class Api_RiskLevel {
     }
     @Test
     public void Delete_Test6() {
-
+        contender URL = new contender();
         System.out.println("***** RiskLevel - Delete*****");
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
 
-        Response response =request.delete(URL+"/api/services/app/RiskLevel/Delete/?Id=4");
+        Response response =request.delete(URL.metodo()+"/api/services/app/RiskLevel/Delete/?Id=4");
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );

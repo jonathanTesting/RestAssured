@@ -13,10 +13,10 @@ import static io.restassured.http.Method.PUT;
 
 public class ClientProduct {
 
-    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
 
     @Test
     public void Post_test1() {
+        contender URL = new contender();
         int cont = 0;
         try {
             for (int i = 1; i < 2; i++) {
@@ -24,7 +24,7 @@ public class ClientProduct {
 
                 ////Insert in Table
                 System.out.println("*****ClientProduct - Create*****");
-                RestAssured.baseURI = URL + "/api/services/app/ClientProduct/Create";
+                RestAssured.baseURI = URL.metodo() + "/api/services/app/ClientProduct/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -62,8 +62,9 @@ public class ClientProduct {
     @Test
     public void Put_Test2() {
 
+        contender URL = new contender();
         System.out.println("***** ClientProduct - Update *****");
-        RestAssured.baseURI = URL+"/api/services/app/ClientProduct/Update";
+        RestAssured.baseURI = URL.metodo() +"/api/services/app/ClientProduct/Update";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -101,37 +102,39 @@ public class ClientProduct {
     @Test
     public void Get_Test3() {
 
+        contender URL = new contender();
         System.out.println("*****ClientProduct - GetSurvey*****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  "+URL+"/api/services/app/ClientProduct/Get");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/ClientProduct/Get");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/ClientProduct/Get?Id=44"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo() +"/api/services/app/ClientProduct/Get?Id=7"));
 
     }
 
     @Test
     public void GetALL_Test4 () {
-        ///Select date the All tabla
+
+        contender URL = new contender();
         System.out.println("*****Channel - Select all Data*****");
-        System.out.println("La URL a validar:  "+URL+"/api/services/app/ClientProduct/GetAll");
+        System.out.println("La URL a validar:  "+URL.metodo()+"/api/services/app/ClientProduct/GetAll");
         System.out.println("=================================================");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/ClientProduct/GetAll"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo() +"/api/services/app/ClientProduct/GetAll"));
     }
 
     @Test
     public void Delete_test5 () {
 
-        ///Delete date the tabla
+        contender URL = new contender();
         System.out.println("*****Channel - Delete*****");
-        System.out.println("La URL a validar: "+URL+" https://02p-elevaapi-d01.azurewebsites.net/api/services/app/ClientProduct/Delete");
+        System.out.println("La URL a validar: "+URL.metodo()+"/api/services/app/ClientProduct/Delete");
         RequestSpecification request = RestAssured.given();
 
-        Response response = request.delete(URL+"/api/services/app/ClientProduct/Delete?Id=44");
+        Response response = request.delete(URL.metodo() +"/api/services/app/ClientProduct/Delete?Id=44");
 
         request.header("Content-Type", "application/json");
         String responseBody = response.getBody().asString();

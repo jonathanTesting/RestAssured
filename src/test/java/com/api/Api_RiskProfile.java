@@ -15,10 +15,11 @@ import static io.restassured.http.Method.PUT;
 
 public class Api_RiskProfile {
 
-    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
+
 
     @Test
     public void Post_Test1() {
+        contender URL = new contender();
         int cont = 0;
         try {
             for (int i = 1; i < 2; i++) {
@@ -26,7 +27,7 @@ public class Api_RiskProfile {
 
                 ////Insert in Table
                 System.out.println("*****RiskProfile/Create - Create*****");
-                RestAssured.baseURI = URL+"/api/services/app/RiskProfile/Create";
+                RestAssured.baseURI = URL.metodo()+"/api/services/app/RiskProfile/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -58,36 +59,39 @@ public class Api_RiskProfile {
 
     @Test
     public void Get_Test2() {
+        contender URL = new contender();
 
         System.out.println("***** RiskProfile - Get *****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:  "+URL+"/api/services/app/RiskProfile/Get");
+        System.out.println("La URL a validar:  "+URL.metodo()+"/api/services/app/RiskProfile/Get");
 
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/RiskProfile/Get?Id=4"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/RiskProfile/Get?Id=4"));
 
     }
 
     @Test
     public void GetALL_Test3() {
        ///Select one date the tabla
+        contender URL = new contender();
        System.out.println("*****RiskProfile - GetAll*****");
        System.out.println("=================================================");
-       System.out.println("La URL a validar:  "+URL+"/api/services/app/RiskProfile/GetAll ");
+       System.out.println("La URL a validar:  "+URL.metodo()+"/api/services/app/RiskProfile/GetAll ");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/RiskProfile/GetAll?ChannelId="));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/RiskProfile/GetAll?ChannelId="));
 
    }
 
     @Test
     public void Put_Test4() {
+        contender URL = new contender();
 
         System.out.println("*****RiskProfile - Update*****");
-        RestAssured.baseURI = URL+"/api/services/app/RiskProfile/Update";
+        RestAssured.baseURI = URL.metodo()+"/api/services/app/RiskProfile/Update";
         System.out.println("=================================================");
         System.out.println("La URL a validar:" + RestAssured.baseURI);
         RequestSpecification httpRequest = RestAssured.given();
@@ -115,12 +119,13 @@ public class Api_RiskProfile {
 
     @Test
     public void Delete_Test5() {
+        contender URL = new contender();
 
         System.out.println("*****RiskProfile- Delete*****");
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
 
-        Response response =request.delete(URL+"/api/services/app/RiskProfile/Delete/?Id=4");
+        Response response =request.delete(URL.metodo()+"/api/services/app/RiskProfile/Delete/?Id=4");
 
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody );

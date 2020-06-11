@@ -21,17 +21,19 @@
   <component name="ChangeListManager">
     <list default="true" id="f3ee41e8-d6dd-44ea-9c32-ce7d38a2364f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas_SIN_USO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_CalculationFormulas_SIN_USO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_ObjetiveCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_ObjetiveCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_Parameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Parameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_RatingCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_RatingCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_RiskLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_RiskLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_RiskProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_RiskProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/ClientProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/ClientProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Davivienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Davivienda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/api/contender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/contender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_Objetive.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_Objetive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_ObjetiveCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_ObjetiveCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_Parameter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_Parameter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_RatingCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_RatingCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_RiskLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_RiskLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_RiskProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_RiskProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_SpanishMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_SpanishMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_SurveyTraceability.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_SurveyTraceability.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Davivienda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Davivienda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/contender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/contender.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +68,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -94,60 +98,7 @@
       <recent name="com.api" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ClientProduct.Get_Test3">
-    <configuration name="Api_CalculationFormulas_SIN_USO.Post_Test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Api_CalculationFormulas_SIN_USO" />
-      <option name="METHOD_NAME" value="Post_Test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientProduct.Get_Test3" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.ClientProduct" />
-      <option name="METHOD_NAME" value="Get_Test3" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Davivienda" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Davivienda.Post_Investment">
     <configuration name="Davivienda.Get_Test2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
@@ -159,6 +110,60 @@
       <option name="PACKAGE_NAME" value="com.api" />
       <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
       <option name="METHOD_NAME" value="Get_Test2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Davivienda.Get_Test3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
+      <option name="METHOD_NAME" value="Get_Test3" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Davivienda.Post_Investment" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
+      <option name="METHOD_NAME" value="Post_Investment" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Davivienda.Post_test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
+      <option name="METHOD_NAME" value="Post_test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -186,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ClientProduct.Get_Test3" />
-        <item itemvalue="TestNG.Davivienda" />
+        <item itemvalue="TestNG.Davivienda.Post_Investment" />
         <item itemvalue="TestNG.Davivienda.Put_Test1" />
+        <item itemvalue="TestNG.Davivienda.Post_test1" />
+        <item itemvalue="TestNG.Davivienda.Get_Test3" />
         <item itemvalue="TestNG.Davivienda.Get_Test2" />
-        <item itemvalue="TestNG.Api_CalculationFormulas_SIN_USO.Post_Test1" />
       </list>
     </recent_temporary>
   </component>
@@ -206,15 +211,6 @@
       <updated>1568984327110</updated>
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -243,26 +239,42 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="377" key="GridCell.Tab.0.bottom" timestamp="1588174720234">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590252051144">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1590252051144" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1590253521872">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590253521872" />
+    <state width="1877" height="357" key="GridCell.Tab.0.bottom" timestamp="1591912389958">
+      <screen x="-1920" y="-217" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1591912389958" />
+    <state width="1323" height="144" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1591907080219" />
     <state width="1323" height="295" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
-    <state width="1877" height="377" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588174720234" />
-    <state width="1877" height="377" key="GridCell.Tab.0.center" timestamp="1588174720234">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state width="1877" height="442" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1589216955691" />
+    <state width="1877" height="357" key="GridCell.Tab.0.center" timestamp="1591912389958">
+      <screen x="-1920" y="-217" width="1920" height="1040" />
     </state>
+    <state width="1877" height="357" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1591912389958" />
+    <state width="1323" height="144" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1591907080218" />
     <state width="1323" height="295" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
-    <state width="1877" height="377" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588174720234" />
-    <state width="1877" height="377" key="GridCell.Tab.0.left" timestamp="1588174720234">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state width="1877" height="442" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1589216955690" />
+    <state width="1877" height="357" key="GridCell.Tab.0.left" timestamp="1591912389958">
+      <screen x="-1920" y="-217" width="1920" height="1040" />
     </state>
+    <state width="1877" height="357" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1591912389958" />
+    <state width="1323" height="144" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1591907080218" />
     <state width="1323" height="295" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
-    <state width="1877" height="377" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588174720234" />
-    <state width="1877" height="377" key="GridCell.Tab.0.right" timestamp="1588174720234">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state width="1877" height="442" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1589216955690" />
+    <state width="1877" height="357" key="GridCell.Tab.0.right" timestamp="1591912389958">
+      <screen x="-1920" y="-217" width="1920" height="1040" />
     </state>
+    <state width="1877" height="357" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1591912389958" />
+    <state width="1323" height="144" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1591907080218" />
     <state width="1323" height="295" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
-    <state width="1877" height="377" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1588174720234" />
+    <state width="1877" height="442" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1589216955690" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1588024898552">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
@@ -332,7 +344,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_SpanishMessage.java</url>
-          <line>127</line>
+          <line>130</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -352,7 +364,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java</url>
-          <line>107</line>
+          <line>193</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

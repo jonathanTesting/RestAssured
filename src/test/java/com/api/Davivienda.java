@@ -102,7 +102,7 @@ public class Davivienda {
     }
 
     @Test
-    public void Post_Investment() {
+    public void Post_SendOpeningInvestment() {
         contender URL = new contender();
                 ////Insert in Table
                 System.out.println("*****Send Opening Investment*****");
@@ -113,8 +113,8 @@ public class Davivienda {
 
                 //Se crea el priemer objeto
                 JSONObject requestParams = new JSONObject();
-                requestParams.put("identificationNumber", "114");
-                requestParams.put("identificationType", "1");
+                /*requestParams.put("identificationNumber", "114");
+                requestParams.put("identificationType", "01");
                 requestParams.put("officeCode", "4090");
                 requestParams.put("clientName","Jaime");
                 requestParams.put("clientFirstLastName","Velez");
@@ -132,8 +132,28 @@ public class Davivienda {
                 requestParams.put("consultantCode","1");
                 requestParams.put("riskProfileCode","04");
                 requestParams.put("initialInvestmentAccount","0570099770000406");
-                requestParams.put("initialInvestmentValue",10000);
+                requestParams.put("initialInvestmentValue",20000);*/
 
+                requestParams.put("identificationNumber", "40001");
+                requestParams.put("identificationType", "01");
+                requestParams.put("officeCode", "4090");
+                requestParams.put("clientName","Ana Maria");
+                requestParams.put("clientFirstLastName","Juarez");
+                requestParams.put("clientSecondLastName","Juaron");
+                requestParams.put("birthDate","1978-12-31T19:00:00");
+                requestParams.put("address","fghjk6789");
+                requestParams.put("addressType",3);
+                requestParams.put("city","16954003");
+                requestParams.put("email","jessica.rojas@componenteserviex.com");
+                requestParams.put("gender","F");
+                requestParams.put("phone",3216548);
+                requestParams.put("phoneType",1);
+                requestParams.put("openingDate","2020-06-17T13:24:58.860Z");
+                requestParams.put("clientType","01");
+                requestParams.put("consultantCode","0");
+                requestParams.put("riskProfileCode","04");
+                requestParams.put("initialInvestmentAccount","4856300034255795");
+                requestParams.put("initialInvestmentValue",500000);
                 //////////////////////////////////////////////////////////////////////////////////
                 ///Se crea el segundo objeto
                 JSONObject requestParams1 = new JSONObject();

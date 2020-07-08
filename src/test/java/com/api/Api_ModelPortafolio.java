@@ -16,10 +16,9 @@ import static io.restassured.http.Method.PUT;
 
 public class Api_ModelPortafolio {
 
-    String URL = "https://02p-elevaapi-d01.azurewebsites.net";
-
-    @Test//Pendiente de Ajustar
-    public void Post_test1() {
+    @Test
+    public void Post() {
+        contender URL = new contender();
         int cont=0;
         try {
             for (int i = 0; i < 1; i++) {
@@ -27,7 +26,7 @@ public class Api_ModelPortafolio {
 
                 ////Insert in Table [Objective]
                 System.out.println("*****ModelPortfolio - Create*****");
-                RestAssured.baseURI = URL+"/api/services/app/ModelPortfolio/Create";
+                RestAssured.baseURI = URL.metodo()+"/api/services/app/ModelPortfolio/Create";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -35,21 +34,25 @@ public class Api_ModelPortafolio {
                 JSONObject requestParams = new JSONObject();
                 requestParams.put("riskProfileId", 3);
                 requestParams.put("name", "ModelPortfolio_Create" + Math.round(Math.random()*30));
+                requestParams.put("sliderName","Test");
                 requestParams.put("isActive", true);
                 requestParams.put("created", "2019-10-22T19:41:49.041Z");
                 requestParams.put("digitateProfitability", 0.0893);
-                requestParams.put("calculateProfitability", 0.061);
+                requestParams.put("digitateVolatility", 1);
+                requestParams.put("calculateProfitability", 0);
                 requestParams.put("calculateVolatility", 0);
                 requestParams.put("calculateVolatilityP1", 0);
-                requestParams.put("isCalculated", true);
+                requestParams.put("isCalculatedProfitability", true);
+                requestParams.put("isCalculatedVolatility", true);
                 requestParams.put("isVolatilityPercentile", true);
+                requestParams.put("historicProfitabilityTimeId", 1);
 
                 /////////////////////////////////////////////////////////////////////////////////
 
                 ///Se crea el Segundo objeto para Array
                 JSONObject requestParams2 = new JSONObject();
                 requestParams2.put("productId", 6);
-                requestParams2.put("composition", 0.35);
+                requestParams2.put("composition", 1);
                 requestParams2.put("name", "Acciones Colombia");
 
                 ///Create Array
@@ -57,10 +60,31 @@ public class Api_ModelPortafolio {
                 ja.add(requestParams2);
                 requestParams.put("product", ja);
 
-                ///Create segundo rray
+                ///Create segundo Array
                 JSONArray jb = new JSONArray();
-                jb.add(0);
+                jb.add(1);
                 requestParams.put("channels", jb);
+
+                /////////////////////////////////////////////////////////////////////////////////
+
+                ///Se crea el tercer objeto para Array
+                JSONObject requestParams3 = new JSONObject();
+                requestParams3.put("start", "2020-07-08T14:16:38.353Z");
+                requestParams3.put("end", "2020-07-08T14:16:38.353Z");
+                requestParams3.put("timePeriod", 0);
+                requestParams3.put("percentile", 0);
+                requestParams3.put("trust", 0);
+                requestParams3.put("nrv", 0);
+                requestParams3.put("scaleFactor", 0);
+                requestParams3.put("percentileP", 0);
+                requestParams3.put("percentileP1", 0);
+                requestParams3.put("percentileD", 0);
+                requestParams3.put("isSelected", true);
+                requestParams3.put("isVolatility", true);
+                ///Create Array
+                JSONArray jc = new JSONArray();
+                jc.add(requestParams3);
+                requestParams.put("calculations", jc);
 
 
                 httpRequest.header("Content-Type", "application/json");
@@ -88,32 +112,34 @@ public class Api_ModelPortafolio {
     }
 
     @Test
-    public void GetALL_test3() {
-        System.out.println("*****ModulePortafolio - GetAll *****");
+    public void GetAll() {
+        contender URL = new contender();
+        System.out.println("*****ModelPortfolio - GetAll *****");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:"+URL+"api/services/app/ModelPortfolio/GetAll");
+        System.out.println("La URL a validar:"+URL.metodo()+"api/services/app/ModelPortfolio/GetAll");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/ModelPortfolio/GetAll"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/ModelPortfolio/GetAll"));
 
     }
 
     @Test
-    public void Get_test4() {
-
-        System.out.println("*****ModelPortfolio - Get*****");
+    public void Get() {
+        contender URL = new contender();
+        System.out.println("*****Channel - Select all Data*****");
+        System.out.println("La URL a validar:  "+URL.metodo()+"/api/services/app/ModelPortfolio/Get?Id=1");
         System.out.println("=================================================");
-        System.out.println("La URL a validar:"+URL+"/api/services/app/ModelPortfolio/Get");
 
         /////Metodo Contenedor///
         contender llamada=new contender();
-        llamada.metodo200(RestAssured.given(),RestAssured.get(URL+"/api/services/app/ModelPortfolio/Get?Id=4"));
+        llamada.metodo200(RestAssured.given(),RestAssured.get(URL.metodo()+"/api/services/app/ModelPortfolio/Get?Id=1"));
 
     }
 
     @Test//Pendiente de Ajustar
-    public void PUT_test4() {
+    public void Put() {
+        contender URL = new contender();
 
                 System.out.println("*****ModulePortafolio - Update*****");
                 RestAssured.baseURI = URL+"/api/services/app/ModelPortfolio/Update";
@@ -182,8 +208,8 @@ public class Api_ModelPortafolio {
             }
 
     @Test
-    public void Delete_test5() {
-
+    public void Delete() {
+        contender URL = new contender();
         System.out.println("*****ModulePrortafolio - Delete*****");
         System.out.println("=================================================");
         System.out.println("La URL a validar:"+URL+"/api/services/app/ModelPortfolio/Delete");

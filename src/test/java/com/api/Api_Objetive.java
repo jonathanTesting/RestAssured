@@ -19,7 +19,7 @@ import static io.restassured.http.Method.PUT;
 public class Api_Objetive {
 
     @Test
-    public void Post_test1() {
+    public void Post_Create() {
         contender URL = new contender();
         int cont=0;
         try {
@@ -36,22 +36,23 @@ public class Api_Objetive {
                 JSONArray array = new JSONArray();
                 JSONObject requestParams = new JSONObject();
                 try {
-                    requestParams.put("objectiveCategoryId", 1);
+                    requestParams.put("objectiveCategoryId", 24);
                     requestParams.put("calculationFormulaId", 1);
                     requestParams.put("name","Test_app/Objective/Create"+ Math.round(Math.random() * 10));
-                    requestParams.put("order",1);
+                    //requestParams.put("order",1);
 
                     JSONArray ja = new JSONArray();
                     requestParams.put("calculationVariables", ja);
 
-
                     JSONObject requestParams3 = new JSONObject();
-                    requestParams3.put("calculationVariableId", 1);
+                    requestParams3.put("calculationVariableId", 2);
+                    requestParams3.put("code","|CD|");
                     requestParams3.put("name", "test"+ Math.round(Math.random() * 20));
                     requestParams3.put("description", "Creada desde app/Objective/");
                     requestParams3.put("minimumValue", 3);
                     requestParams3.put("maximumValue", 18);
                     requestParams3.put("warningValue", "Test");
+                    requestParams3.put("defaultValue", "null");
 
 
                     ///Create Array
@@ -59,7 +60,7 @@ public class Api_Objetive {
                     ja.add(requestParams3);
                     jc.add(2);
                     requestParams.put("variableListValues", jc);
-                    requestParams.put("channels", jc);
+
 
                 }catch (JsonException e) {
                     e.printStackTrace();
@@ -90,7 +91,7 @@ public class Api_Objetive {
         }
     }
     @Test
-    public void POST_Test2() {
+    public void POST_CreateObjectiveByCalculationVariable() {
         contender URL = new contender();
         System.out.println("*****CreateObjectiveByCalculationVariable - Create*****");
         RestAssured.baseURI = URL.metodo() +"api/services/app/Objective/CreateObjectiveByCalculationVariable";
@@ -133,7 +134,7 @@ public class Api_Objetive {
                 Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
             }
     @Test
-    public void POST_Test3() {
+    public void POST_CreateObjectiveByChannel() {
         contender URL = new contender();
         int cont=0;
         try {
@@ -180,7 +181,7 @@ public class Api_Objetive {
         }
     }
     @Test
-    public void POST_Test4() {
+    public void POST_CreateObjectiveByVariableListValue() {
         contender URL = new contender();
         int cont=0;
         try {
@@ -227,7 +228,7 @@ public class Api_Objetive {
         }
     }
     @Test
-    public void PUT_Test5() {
+    public void PUT_Order() {
 
         contender URL = new contender();
         int cont=0;
@@ -274,7 +275,7 @@ public class Api_Objetive {
         }
     }
     @Test
-    public void Get_test6() {
+    public void Get_id() {
         contender URL = new contender();
         System.out.println("*****Objective - Select for id*****");
         System.out.println("=================================================");
@@ -286,7 +287,7 @@ public class Api_Objetive {
 
     }
     @Test
-    public void Get_test7() {
+    public void Get_GetAll() {
         contender URL = new contender();
         System.out.println("*****Objective/Get - Select ALL*****");
         Response response = RestAssured.get(URL.metodo() +"/api/services/app/Objective/GetAll");
@@ -312,15 +313,16 @@ public class Api_Objetive {
         Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
     }
     @Test
-    public void Post_test8() {
+    public void Post_Update() {
+        contender URL = new contender();
         int cont=0;
         try {
-            for (int i = 1; i < 1; i++) {
+            for (int i = 1; i < 2; i++) {
                 cont++;
 
                 ////Insert in Table [Objective]
                 System.out.println("*****Objective - Update*****");
-                RestAssured.baseURI = "https://elevadevbackend.azurewebsites.net/api/services/app/Objective/Update";
+                RestAssured.baseURI = URL.metodo()+"/api/services/app/Objective/Update";
                 System.out.println("=================================================");
                 System.out.println("La URL a validar:" + RestAssured.baseURI);
                 RequestSpecification httpRequest = RestAssured.given();
@@ -328,30 +330,31 @@ public class Api_Objetive {
                 JSONArray array = new JSONArray();
                 JSONObject requestParams = new JSONObject();
                 try {
-                    requestParams.put("objectiveCategoryId", 2);
-                    requestParams.put("calculationFormulaId", 3);
+                    requestParams.put("objectiveCategoryId", 14);
+                    requestParams.put("calculationFormulaId", 1);
                     requestParams.put("name","Hoy");
-                    requestParams.put("id",2);
+                    requestParams.put("id",69);
 
                     JSONArray ja = new JSONArray();
                     requestParams.put("calculationVariables", ja);
 
 
                     JSONObject requestParams3 = new JSONObject();
-                    requestParams3.put("calculationVariableId", 5);
+                    requestParams3.put("calculationVariableId", 2);
+                    requestParams3.put("code","|CD|");
                     requestParams3.put("name", "test"+ Math.round(Math.random() * 20));
-                    requestParams3.put("description", "Creada desde app/Objective/");
+                    requestParams3.put("description", "Update app/Objective/");
                     requestParams3.put("minimumValue", 3);
                     requestParams3.put("maximumValue", 18);
                     requestParams3.put("warningValue", "Test");
-
+                    requestParams3.put("defaultValue", "null");
 
                     ///Create Array
                     JSONArray jc = new JSONArray();
                     ja.add(requestParams3);
-                    jc.add(10);
+                    jc.add(0);
                     requestParams.put("variableListValues", jc);
-                    requestParams.put("channels", jc);
+
 
                 }catch (JsonException e) {
                     e.printStackTrace();

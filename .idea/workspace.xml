@@ -20,20 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3ee41e8-d6dd-44ea-9c32-ce7d38a2364f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/LifeExpectancy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_ModelPortafolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_ModelPortafolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/api/Davivienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/Davivienda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/api/contender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/api/contender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_ModelPortafolio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_ModelPortafolio.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_Objetive.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_Objetive.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_ObjetiveCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_ObjetiveCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_Parameter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_Parameter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_RatingCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_RatingCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_RiskLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_RiskLevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_RiskProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_RiskProfile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_SpanishMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_SpanishMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Api_SurveyTraceability.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Api_SurveyTraceability.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/Davivienda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/Davivienda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/api/contender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/api/contender.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +92,8 @@
       <recent name="com.api" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Davivienda.Post_Investment">
-    <configuration name="Davivienda.Get_Test2" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Api_ModelPortafolio.Post">
+    <configuration name="Api_ModelPortafolio.Get" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +102,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
-      <option name="METHOD_NAME" value="Get_Test2" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_ModelPortafolio" />
+      <option name="METHOD_NAME" value="Get" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -117,7 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Davivienda.Get_Test3" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Api_ModelPortafolio.GetAll" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -126,8 +120,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
-      <option name="METHOD_NAME" value="Get_Test3" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_ModelPortafolio" />
+      <option name="METHOD_NAME" value="GetAll" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Davivienda.Post_Investment" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Api_ModelPortafolio.ModelPortfolio​_Get" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -144,8 +138,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
-      <option name="METHOD_NAME" value="Post_Investment" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_ModelPortafolio" />
+      <option name="METHOD_NAME" value="ModelPortfolio​_Get" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -153,7 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Davivienda.Post_test1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Api_ModelPortafolio.Post" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -162,8 +156,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
-      <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
-      <option name="METHOD_NAME" value="Post_test1" />
+      <option name="MAIN_CLASS_NAME" value="com.api.Api_ModelPortafolio" />
+      <option name="METHOD_NAME" value="Post" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -171,7 +165,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Davivienda.Put_Test1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Davivienda.Get_GetSurvey" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -181,7 +175,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.api" />
       <option name="MAIN_CLASS_NAME" value="com.api.Davivienda" />
-      <option name="METHOD_NAME" value="Put_Test1" />
+      <option name="METHOD_NAME" value="Get_GetSurvey" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -191,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Davivienda.Post_Investment" />
-        <item itemvalue="TestNG.Davivienda.Put_Test1" />
-        <item itemvalue="TestNG.Davivienda.Post_test1" />
-        <item itemvalue="TestNG.Davivienda.Get_Test3" />
-        <item itemvalue="TestNG.Davivienda.Get_Test2" />
+        <item itemvalue="TestNG.Api_ModelPortafolio.Post" />
+        <item itemvalue="TestNG.Api_ModelPortafolio.GetAll" />
+        <item itemvalue="TestNG.Api_ModelPortafolio.Get" />
+        <item itemvalue="TestNG.Api_ModelPortafolio.ModelPortfolio​_Get" />
+        <item itemvalue="TestNG.Davivienda.Get_GetSurvey" />
       </list>
     </recent_temporary>
   </component>
@@ -247,34 +241,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590253521872" />
-    <state width="1877" height="357" key="GridCell.Tab.0.bottom" timestamp="1591912389958">
+    <state width="1877" height="148" key="GridCell.Tab.0.bottom" timestamp="1594225850622">
       <screen x="-1920" y="-217" width="1920" height="1040" />
     </state>
-    <state width="1877" height="357" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1591912389958" />
-    <state width="1323" height="144" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1591907080219" />
+    <state width="1877" height="148" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1594225850622" />
+    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1592502930463" />
     <state width="1323" height="295" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
     <state width="1877" height="442" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1589216955691" />
-    <state width="1877" height="357" key="GridCell.Tab.0.center" timestamp="1591912389958">
+    <state width="1323" height="326" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592248553828" />
+    <state width="1877" height="148" key="GridCell.Tab.0.center" timestamp="1594225850622">
       <screen x="-1920" y="-217" width="1920" height="1040" />
     </state>
-    <state width="1877" height="357" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1591912389958" />
-    <state width="1323" height="144" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1591907080218" />
+    <state width="1877" height="148" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1594225850622" />
+    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1592502930462" />
     <state width="1323" height="295" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
     <state width="1877" height="442" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1589216955690" />
-    <state width="1877" height="357" key="GridCell.Tab.0.left" timestamp="1591912389958">
+    <state width="1323" height="326" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592248553828" />
+    <state width="1877" height="148" key="GridCell.Tab.0.left" timestamp="1594225850622">
       <screen x="-1920" y="-217" width="1920" height="1040" />
     </state>
-    <state width="1877" height="357" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1591912389958" />
-    <state width="1323" height="144" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1591907080218" />
+    <state width="1877" height="148" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1594225850621" />
+    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1592502930460" />
     <state width="1323" height="295" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
     <state width="1877" height="442" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1589216955690" />
-    <state width="1877" height="357" key="GridCell.Tab.0.right" timestamp="1591912389958">
+    <state width="1323" height="326" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592248553827" />
+    <state width="1877" height="148" key="GridCell.Tab.0.right" timestamp="1594225850622">
       <screen x="-1920" y="-217" width="1920" height="1040" />
     </state>
-    <state width="1877" height="357" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1591912389958" />
-    <state width="1323" height="144" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1591907080218" />
+    <state width="1877" height="148" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-217.1920.1040@-1920.-217.1920.1040" timestamp="1594225850622" />
+    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-217.1920.1040@0.0.1366.728" timestamp="1592502930462" />
     <state width="1323" height="295" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1587735509229" />
     <state width="1877" height="442" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1589216955690" />
+    <state width="1323" height="326" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592248553828" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1588024898552">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
@@ -314,7 +312,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java</url>
-          <line>290</line>
+          <line>291</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -324,7 +322,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java</url>
-          <line>94</line>
+          <line>95</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -334,7 +332,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java</url>
-          <line>423</line>
+          <line>426</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -364,13 +362,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Davivienda.java</url>
-          <line>193</line>
+          <line>213</line>
           <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/api/ClientProduct.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/ClientProduct.java</url>
@@ -389,7 +382,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_ModelPortafolio.java</url>
-          <line>22</line>
+          <line>21</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
@@ -447,6 +440,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/api/Api_Objetive.java</url>
+          <line>21</line>
+          <properties class="com.api.Api_Objetive" method="Post_test1">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
